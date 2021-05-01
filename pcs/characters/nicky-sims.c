@@ -1,3 +1,6 @@
+/*
+   Based on a character from "A Nightmare at Hill Manor" by Christopher Lee Simmons, 2011.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
