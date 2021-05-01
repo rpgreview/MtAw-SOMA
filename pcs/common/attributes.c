@@ -63,6 +63,14 @@ int get_attribute(enum attributes a) {
     return(attributes[ac.type][ac.attribute_category]);
 }
 
+int integrity_modifier() {
+    return
+        2*(8 <= integrity)
+         +(6 <= integrity && integrity < 8)
+         -(2 <= integrity && integrity < 4)
+        -2*(integrity < 2);
+}
+
 void print_attributes() {
     char *dot_str;
     for(int i = 0; i < 64; ++i) {
@@ -95,7 +103,7 @@ void print_attributes() {
     free(dot_str);
 
     dot_str = dots(integrity, max(10, integrity));
-    printf(fmt, "Integrity:", integrity, dot_str);
+    printf("%-12s %3d %s (%+d)\n", "Integrity:", integrity, dot_str, integrity_modifier());
     free(dot_str);
     printf("\n");
 
