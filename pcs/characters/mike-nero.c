@@ -69,7 +69,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 };
 
 // Different specializations lead to different skill column widths.
-// Best to customise the widths for your character from the start.
+// Rule of thumb: keep second number at 21, adjust first number according to skill name + specialization
 char *skill_column_fmt[3] = {
     "%-22s %-21s",
     "%-10s %-21s",
