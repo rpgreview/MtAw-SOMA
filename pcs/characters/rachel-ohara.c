@@ -36,8 +36,7 @@ Rachel moved into Hill Manor apartments with a guy, but they broke up. She liked
 };
 
 char *aspirations[] = {
-    "Don't drink for a day",
-    "Bring down a powerful crim boss",
+    "Bring down a powerful crime boss",
     NULL
 };
 
@@ -91,7 +90,8 @@ struct merit merits[] = {
     { "Prof Training (Police)",     2 },
     { "Status (Police)",            2 },
     { "Police Tactics",             3 },
-    { "Contacts (Lawyers, Gangs)",  2 },
+    { "Contacts (Lawyers, Gangs)",  2 }, // Due to Prof Training
+    { "Serpentine",                 1 },
     { NULL,                         0 }
 };
 
@@ -115,4 +115,10 @@ void advancement() {
 
     // Session 1
     --integrity;
+
+    // Buy a point of Serpentine
+    ++mundane_xp_spent;
+
+    // After witnessing several uncanny event, Rachel is starting to feel like she's seen it all, and things don't phase her as much.
+    ++attributes[Resistance][Social];
 }

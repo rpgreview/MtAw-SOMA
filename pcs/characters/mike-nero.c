@@ -94,7 +94,7 @@ struct merit merits[] = {
     { "Resources",                  2 },
     { "Good Time Management",       1 },
     { "Prof Training (Paramedic)",  2 },
-    { "Contacts (Doctors, Cops)",   2 },
+    { "Contacts (Doctors, Cops)",   2 }, // Due to Prof Training
     { "Library",                    1 },
     { NULL,                         0 },
 };

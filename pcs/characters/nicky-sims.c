@@ -41,8 +41,6 @@ As the pay got better, Nicky moved into Hill Manor Apartments. He pays his rent 
 };
 
 char *aspirations[] = {
-    "Rescue someone",
-    "Read a book",
     NULL
 };
 
@@ -93,17 +91,19 @@ char *skill_column_fmt[3] = {
 };
 
 struct merit merits[] = {
-    { "Language (English)",         1 },
-    { "Resources",                  2 },
-    { "Indomitable",                2 },
-    { "Alternate Identity",         2 },
-    { "Library",                    1 },
-    { NULL,                         0 }
+    { "Language (English)",                             1 },
+    { "Resources",                                      2 },
+    { "Indomitable",                                    2 },
+    { "Alternate Identity",                             2 },
+    { "Library",                                        1 },
+    { "Professional Training (Criminal)",               1 },
+    { "Contacts (Black Market, Security/Locksmiths)",   2 }, // Due to prof training
+    { NULL,                                             0 }
 };
 
 // Like skill columns, merit widths vary a lot per character.
 // Customise yours here.
-char *merit_fmt = "%-18s %s\n";
+char *merit_fmt = "%-44s %s\n";
 
 struct mundane_equipment_t misc_gear[] = {
     { NULL, 0, 0, 0, 0 }
@@ -118,4 +118,10 @@ struct weapon_t weapons[] = {
 
 void advancement() {
     // Where to note experience expenditures
+
+    // Buy a point of Prof Training (Criminal)
+    ++mundane_xp_spent;
+
+    // After witnessing strange events, Nicky feels harder than ever.
+    ++attributes[Resistance][Physical];
 }

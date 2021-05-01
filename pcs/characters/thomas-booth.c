@@ -37,7 +37,6 @@ Thomas moved into Hill Manor Apartments just over a year ago. He likes the place
 
 char *aspirations[] = {
     "Seduce someone",
-    "Learn a mystery or secret",
     NULL
 };
 
@@ -90,8 +89,9 @@ char *skill_column_fmt[3] = {
 struct merit merits[] = {
     { "Martial Arts",                               4 },
     { "Prof Training (Librarian)",                  2 },
-    { "Contacts (Academics, Sports Journalists)",   2 },
+    { "Contacts (Academics, Sports Journalists)",   2 }, // Due to Prof Training
     { "Library",                                    1 },
+    { "Trained Observer",                           1 },
     { NULL,                                         0 }
 };
 
@@ -109,4 +109,10 @@ struct weapon_t weapons[] = {
 
 void advancement() {
     // Where to note experience expenditures
+
+    // Purchase the Trained Observer Merit
+    ++mundane_xp_spent;
+
+    // After witnessing several uncanny event, Thomas is starting to feel like he's seen it all, and things don't phase him as much.
+    ++attributes[Resistance][Social];
 }
