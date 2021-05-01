@@ -6,6 +6,7 @@
 #include "common/attributes.h"
 #include "common/skills.h"
 #include "common/merits.h"
+#include "common/inventory.h"
 #include "players/michael.h"
 
 // Need to grab player XP here since it's the only non-shared source file.
@@ -87,6 +88,14 @@ struct merit merits[] = {
 // Like skill columns, merit widths vary a lot per character.
 // Customise yours here.
 char *merit_fmt = "%-40s %s\n";
+
+struct mundane_equipment_t misc_gear[] = {
+    { NULL, 0, 0, 0, 0 }
+};
+
+struct weapon_t weapons[] = {
+    { NULL, 0, 0, 0, 0, 0, 0, 0, 0 }
+};
 
 void advancement() {
     // Where to note experience expenditures

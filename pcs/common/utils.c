@@ -7,6 +7,7 @@
 #include "common/attributes.h"
 #include "common/skills.h"
 #include "common/merits.h"
+#include "common/inventory.h"
 
 char *dots(int ndots, int max_dots) {
     const char *dot = "\xE2\x97\x8F";
@@ -76,6 +77,14 @@ void print_character() {
     printf("------\n");
     printf("\n");
     print_merits();
+
+    printf("\n");
+    printf("Gear\n");
+    printf("----\n");
+    printf("\n");
+    print_mundane_equipment();
+    printf("\n");
+    print_weapons();
 }
 
 int main(int argc, char **argv) {

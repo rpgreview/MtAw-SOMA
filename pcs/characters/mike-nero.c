@@ -6,6 +6,7 @@
 #include "common/attributes.h"
 #include "common/skills.h"
 #include "common/merits.h"
+#include "common/inventory.h"
 #include "players/jay.h"
 
 // Need to grab player XP here before consuming it in shared source files.
@@ -90,6 +91,18 @@ struct merit merits[] = {
 // Like skill columns, merit widths vary a lot per character.
 // Customise yours here.
 char *merit_fmt = "%-25s %s\n";
+
+struct mundane_equipment_t misc_gear[] = {
+    // Equipment,           Durability, Structure,  Size,   Cost);
+    { "First Aid Kit +1",   1,          3,          2,      2 },
+    { NULL, 0, 0, 0, 0 }
+};
+
+struct weapon_t weapons[] = {
+    /* Weapon/Attack,   Dmg,    Short,  Medium, Long,   Clip,   Init,   Str,    Size    */
+    { "Runed Dagger",   0,          0,       0,    0,      0,     -1,     1,       1 },
+    { NULL,             0,          0,       0,    0,      0,      0,     0,       0 }
+};
 
 void advancement() {
     // Where to note experience expenditures
