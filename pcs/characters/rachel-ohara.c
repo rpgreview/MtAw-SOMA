@@ -90,4 +90,7 @@ char *merit_fmt = "%-25s %s\n";
 
 void advancement() {
     // Where to note experience expenditures
+
+    // Session 1
+    --integrity;
 }

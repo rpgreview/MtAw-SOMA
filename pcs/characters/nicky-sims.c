@@ -81,6 +81,7 @@ struct merit merits[] = {
     { "Resources",                  2 },
     { "Indomitable",                2 },
     { "Alternate Identity",         2 },
+    { "Library",                    1 },
     { NULL,                         0 }
 };
 

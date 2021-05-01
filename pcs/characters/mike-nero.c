@@ -76,7 +76,6 @@ char *skill_column_fmt[3] = {
     "%-17s %-21s"
 };
 
-
 struct merit merits[] = {
     { "Status (Paramedic)",         1 },
     { "Tolerance for Biology",      1 },
@@ -84,6 +83,7 @@ struct merit merits[] = {
     { "Good Time Management",       1 },
     { "Prof Training (Paramedic)",  2 },
     { "Contacts (Doctors, Cops)",   2 },
+    { "Library",                    1 },
     { NULL,                         0 },
 };
 

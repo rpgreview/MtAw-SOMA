@@ -80,7 +80,8 @@ struct merit merits[] = {
     { "Martial Arts",                               4 },
     { "Prof Training (Librarian)",                  2 },
     { "Contacts (Academics, Sports Journalists)",   2 },
-    { NULL,                         0 }
+    { "Library",                                    1 },
+    { NULL,                                         0 }
 };
 
 // Like skill columns, merit widths vary a lot per character.
