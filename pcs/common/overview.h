@@ -11,6 +11,10 @@ struct character_overview {
     char *chronicle;
     char *faction;
     char *group;
+    char *quote;
+    char *background;
+    char *description;
+    char *roleplaying_hints;
 };
 
 extern struct character_overview overview;
@@ -22,3 +26,4 @@ extern int arcane_xp_spent;
 extern bool awakened;
 
 void print_overview();
+void print_notes();

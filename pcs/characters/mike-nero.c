@@ -17,15 +17,23 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name      */ "Michael Nero",
-    /* Age       */ "",
-    /* Player    */ PLAYER_NAME,
-    /* Virtue    */ "Faith",
-    /* Vice      */ "Painkiller Addiction",
-    /* Concept   */ "Strung Out Paramedic",
-    /* Chronicle */ "SOMA",
-    /* Faction   */ "",
-    /* Group     */ ""
+    /* Name        */ "Michael Nero",
+    /* Age         */ "",
+    /* Player      */ PLAYER_NAME,
+    /* Virtue      */ "Faith: Michael has faith that in preserving life, he gives meaning to his own.",
+    /* Vice        */ "Painkiller Addiction",
+    /* Concept     */ "Strung Out Paramedic",
+    /* Chronicle   */ "SOMA",
+    /* Faction     */ "",
+    /* Group       */ "",
+    /* Quote       */ "Apply pressure.",
+    /* Background  */ "Michael’s a hard worker. He always has been. When he was young, Michael spent his summers helping his grandfather renovate the family’s vacation house. It was his escape from the harsh city and its dangers. He was convinced that everyone in his family was going to get mugged or hit by a drunk driver or any number of other morbid nightmares he had about the city’s horrors. But it was different here. Calm, soothing. He rehung walls with his grandfather, installed new windows and even helped out with the roofing. It was nice to do things with his hands, to see the immediate difference from his work.\n\n\
+One day, while he was on the roof, he saw his grandfather fall in the yard. He whispered to the boy that it felt like a demon was sitting on his chest. By the time the paramedics arrived, Michael’s grandfather was dead. They tried for twenty minutes to resuscitate him, but there was nothing they could do.\n\n\
+Michael never went out to the vacation house again. The family sold it a few summers later, but Michael had already learned a lesson from it and moved on: death comes everywhere. He blamed himself for failing his grandfather. He should have been able to help him. He read up on heart attacks, and if he had only done this, or given him that, he could have saved him. His family thought he was being noble when he started school to be a paramedic.\n\n\
+To Michael, death is meaningless violence, fear and indignity. Life has meaning, and must be preserved, if only to stave off the entropy of death. He started riding the night streets with his partner, and soon he discovered that he doesn’t actually have the resources to deal with the constant loss of patients.\n\n\
+But the pills take the edge off that.",
+    /* Description */ "Michael has a gaunt look to him, like he doesn’t get nearly enough sleep. His uncombed hair is wild and thick. Three days of stubble is scattered across his cheeks and chin, and the worst part is, it works for him. He’s more attractive when everything’s just slightly askew than he is when he cleans up. Which is basically how he likes it.",
+    /* RP Hints    */ "You look like you don’t get enough sleep because you seriously don’t get enough sleep. Between the wonky hours of driving an ambulance and the dreams, you have severe insomnia most of the time. You’re tempted to blow off the ghost thing as hallucinations, whether from the drugs or the sleep deprivation, you don’t know."
 };
 
 char *aspirations[] = {

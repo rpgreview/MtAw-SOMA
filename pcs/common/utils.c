@@ -83,6 +83,10 @@ void print_character() {
     print_mundane_equipment();
     printf("\n");
     print_weapons();
+    printf("\n");
+
+    print_header("Notes");
+    print_notes();
 }
 
 int main(int argc, char **argv) {

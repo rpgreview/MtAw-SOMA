@@ -33,3 +33,12 @@ void print_overview() {
         printf("Unspent Arcane XP: %d\n", arcane_xp - arcane_xp_spent);
     }
 }
+
+void print_notes() {
+    printf("### Quote\n\n");
+    printf("“%s”\n\n\n", overview.quote);
+    printf("### Background\n\n");
+    printf("%s\n\n\n", overview.background);
+    printf("### Description\n\n");
+    printf("%s\n", overview.roleplaying_hints);
+}

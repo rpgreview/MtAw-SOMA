@@ -15,15 +15,19 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name      */ "Nobody",
-    /* Age       */ "",
-    /* Player    */ PLAYER_NAME,
-    /* Virtue    */ "",
-    /* Vice      */ "",
-    /* Concept   */ "",
-    /* Chronicle */ "SOMA",
-    /* Faction   */ "",
-    /* Group     */ ""
+    /* Name        */ "Nobody",
+    /* Age         */ "",
+    /* Player      */ PLAYER_NAME,
+    /* Virtue      */ "",
+    /* Vice        */ "",
+    /* Concept     */ "",
+    /* Chronicle   */ "SOMA",
+    /* Faction     */ "",
+    /* Group       */ "",
+    /* Quote       */ "",
+    /* Background  */ "",
+    /* Description */ "",
+    /* RP Hints    */ ""
 };
 
 char *aspirations[] = {

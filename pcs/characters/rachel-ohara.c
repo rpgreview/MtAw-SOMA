@@ -17,15 +17,22 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name      */ "Rachel O'Hara",
-    /* Age       */ "",
-    /* Player    */ PLAYER_NAME,
-    /* Virtue    */ "Justice",
-    /* Vice      */ "Alcoholic",
-    /* Concept   */ "Old-fashioned Cop",
-    /* Chronicle */ "SOMA",
-    /* Faction   */ "",
-    /* Group     */ ""
+    /* Name        */ "Rachel O'Hara",
+    /* Age         */ "",
+    /* Player      */ PLAYER_NAME,
+    /* Virtue      */ "Justice. Rachel feels fulfilled when things go right and justice is served.",
+    /* Vice        */ "Alcoholic",
+    /* Concept     */ "Old-fashioned Cop",
+    /* Chronicle   */ "SOMA",
+    /* Faction     */ "",
+    /* Group       */ "",
+    /* Quote       */ "Put on the cuffs and I won’t have to hurt you.",
+    /* Background  */ "Rachel comes from a cop family. Her father, Joe, was a good Irish Catholic boy, the favorite son. At least, he was until he married a Jewish girl named Irene. His brothers mocked him for it, but his dad just said, “at least she’s not a Protestant.” Irene’s family threatened to disown her for marrying a gentile. So Rachel grew up here, away from the bulk of the family in Boston, just because her dad was tired of getting grief from both sides of the family.\n\n\
+Joe was a cop, old fashioned and hard-nosed. Rachel’s granddad once told her that Joe’d been born with the nightstick in his hand. He’d been a cop too until he retired, along with her great-grandfather and his father before him. Joe figured the dynasty was done, but to Rachel, it was never a question. She joined the academy as soon as she was of age.\n\n\
+She worked her way up from pounding pavement on the street to her current position as a detective. When she got her detective badge, her granddad told her it was “adequate,” despite the fact that he’d never made detective in his entire career.\n\n\
+Rachel moved into Hill Manor apartments with a guy, but they broke up. She liked the place, so she kept it. She even likes the poker game, though she has a feeling Mike’s got a problem.",
+    /* Description */ "Rachel has shoulder-length brown hair that she usually keeps pulled back into a ponytail, and a scattering of freckles across her strong face. Physically, she’s pretty, but the tension in her—the intensity—makes her beautiful.",
+    /* RP Hints    */ "You’re constantly trying to prove yourself. You grew up on the crossroads between two worlds, and you were never quite good enough for either. So you have to be better than both. Given the situation here, your first priority is to gather survivors and protect them while leading your people out of this."
 };
 
 char *aspirations[] = {
