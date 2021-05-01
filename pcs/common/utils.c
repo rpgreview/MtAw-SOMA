@@ -54,34 +54,32 @@ void calculate_secondary_stats() {
     defense = min(get_attribute(Dexterity), get_attribute(Wits)) + athletics.dots;
 }
 
+void print_header(const char *h) {
+    printf("\n%s\n", h);
+    int h_len = strnlen(h, 256);
+    char *uline = malloc(h_len + 1);
+    memset(uline, '-', h_len);
+    uline[h_len] = '\0';
+    printf("%s\n\n", uline);
+}
+
 void print_character() {
     print_overview();
     printf("\n");
 
-    printf("\n");
-    printf("Attributes\n");
-    printf("----------\n");
-    printf("\n");
+    print_header("Attributes");
     print_attributes();
     printf("\n");
 
-    printf("\n");
-    printf("Skills\n");
-    printf("------\n");
-    printf("\n");
+    print_header("Skills");
     print_skills();
     printf("\n");
 
-    printf("\n");
-    printf("Merits\n");
-    printf("------\n");
-    printf("\n");
+    print_header("Merits");
     print_merits();
+    printf("\n");
 
-    printf("\n");
-    printf("Gear\n");
-    printf("----\n");
-    printf("\n");
+    print_header("Gear");
     print_mundane_equipment();
     printf("\n");
     print_weapons();
