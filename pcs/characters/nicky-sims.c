@@ -46,6 +46,7 @@ char *aspirations[] = {
 };
 
 char *obsessions[] = {
+    "The soviet space program: a metaphysical perspective",
     NULL
 };
 
@@ -129,4 +130,10 @@ void advancement() {
 
     // After witnessing strange events, Nicky feels harder than ever.
     ++attributes[Resistance][Physical];
+
+    // Nicky Awakens
+    awakened = true;
+    gnosis = 1;
+    wisdom = integrity;
+    integrity = 0;
 }
