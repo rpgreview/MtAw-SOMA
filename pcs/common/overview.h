@@ -20,10 +20,7 @@ struct character_overview {
 extern struct character_overview overview;
 extern char *aspirations[];
 extern int mundane_xp;
-extern int arcane_xp;
 extern int mundane_xp_spent;
-extern int arcane_xp_spent;
-extern bool awakened;
 
 void print_overview();
 void print_notes();

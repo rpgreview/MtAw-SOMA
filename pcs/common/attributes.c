@@ -3,6 +3,7 @@
 #include "common/utils.h"
 #include "common/attributes.h"
 #include "common/skills.h"
+#include "common/magic.h"
 
 int size = 5;
 int integrity = 7;
@@ -94,6 +95,12 @@ void print_attributes() {
     printf("\n");
     char *fmt = "%-12s %3d %s\n";
 
+    if(awakened) {
+        dot_str = dots(gnosis, max(10, gnosis));
+        printf(fmt, "Gnosis:", gnosis, dot_str);
+        free(dot_str);
+    }
+
     dot_str = dots(health, max(10, health));
     printf(fmt, "Health:", health, dot_str);
     free(dot_str);
@@ -102,10 +109,23 @@ void print_attributes() {
     printf(fmt, "Willpower:", willpower, dot_str);
     free(dot_str);
 
-    dot_str = dots(integrity, max(10, integrity));
-    printf("%-12s %3d %s (%+d)\n", "Integrity:", integrity, dot_str, integrity_modifier());
-    free(dot_str);
-    printf("\n");
+    if(awakened) {
+        char *wisdom_level[] = {
+            /* 0 */    "Mad",
+            /* 1-3 */  "Falling", "Falling", "Falling",
+            /* 4-7 */  "Understanding", "Understanding", "Understanding", "Understanding",
+            /* 8-10 */ "Enlightened", "Enlightened", "Enlightened", NULL
+        };
+        dot_str = dots(wisdom, max(10, wisdom));
+        printf("%-12s %3d %s (%s)\n", "Wisdom:", wisdom, dot_str, wisdom_level[wisdom]);
+        free(dot_str);
+        printf("\n");
+    } else {
+        dot_str = dots(integrity, max(10, integrity));
+        printf("%-12s %3d %s (%+d)\n", "Integrity:", integrity, dot_str, integrity_modifier());
+        free(dot_str);
+        printf("\n");
+    }
 
     dot_str = dots(size, max(10, size));
     printf(fmt, "Size:", size, dot_str);

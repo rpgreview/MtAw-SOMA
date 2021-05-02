@@ -8,6 +8,7 @@
 #include "common/skills.h"
 #include "common/merits.h"
 #include "common/inventory.h"
+#include "common/magic.h"
 #include "players/nobody.h"
 
 // Need to grab player XP here since it's the only non-shared source file.
@@ -31,6 +32,10 @@ struct character_overview overview = {
 };
 
 char *aspirations[] = {
+    NULL
+};
+
+char *obsessions[] = {
     NULL
 };
 

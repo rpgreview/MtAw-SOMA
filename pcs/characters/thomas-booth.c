@@ -10,6 +10,7 @@
 #include "common/skills.h"
 #include "common/merits.h"
 #include "common/inventory.h"
+#include "common/magic.h"
 #include "players/michael.h"
 
 // Need to grab player XP here since it's the only non-shared source file.
@@ -37,6 +38,10 @@ Thomas moved into Hill Manor Apartments just over a year ago. He likes the place
 
 char *aspirations[] = {
     "Seduce someone",
+    NULL
+};
+
+char *obsessions[] = {
     NULL
 };
 

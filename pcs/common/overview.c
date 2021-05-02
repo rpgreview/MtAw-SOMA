@@ -2,10 +2,9 @@
 #include <stdbool.h>
 #include <string.h>
 #include "common/overview.h"
+#include "common/magic.h"
 
 int mundane_xp_spent = 0;
-int arcane_xp_spent = 0;
-bool awakened = false;
 
 void print_overview() {
     printf("%s\n", overview.name);
@@ -27,6 +26,15 @@ void print_overview() {
         printf("- %s\n", aspirations[c++]);
     }
     printf("\n");
+
+    if(awakened) {
+        printf("Obsessions:\n");
+        int ob = 0;
+        while(obsessions[ob] != NULL) {
+            printf("- %s\n", obsessions[ob++]);
+        }
+        printf("\n");
+    }
 
     printf("Unspent XP: %d\n", mundane_xp - mundane_xp_spent);
     if(awakened) {

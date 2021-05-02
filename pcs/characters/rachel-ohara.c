@@ -10,6 +10,7 @@
 #include "common/skills.h"
 #include "common/merits.h"
 #include "common/inventory.h"
+#include "common/magic.h"
 #include "players/andrew.h"
 
 // Need to grab player XP here since it's the only non-shared source file.
@@ -37,6 +38,10 @@ Rachel moved into Hill Manor apartments with a guy, but they broke up. She liked
 
 char *aspirations[] = {
     "Bring down a powerful crime boss",
+    NULL
+};
+
+char *obsessions[] = {
     NULL
 };
 

@@ -10,6 +10,7 @@
 #include "common/skills.h"
 #include "common/merits.h"
 #include "common/inventory.h"
+#include "common/magic.h"
 #include "players/jay.h"
 
 // Need to grab player XP here before consuming it in shared source files.
@@ -39,6 +40,10 @@ But the pills take the edge off that.",
 char *aspirations[] = {
     "Give someone hope",
     "Save someone's life",
+    NULL
+};
+
+char *obsessions[] = {
     NULL
 };
 

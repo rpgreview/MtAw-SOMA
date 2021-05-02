@@ -10,6 +10,7 @@
 #include "common/skills.h"
 #include "common/merits.h"
 #include "common/inventory.h"
+#include "common/magic.h"
 #include "players/lev.h"
 
 // Need to grab player XP here since it's the only non-shared source file.
@@ -41,6 +42,10 @@ As the pay got better, Nicky moved into Hill Manor Apartments. He pays his rent 
 };
 
 char *aspirations[] = {
+    NULL
+};
+
+char *obsessions[] = {
     NULL
 };
 
