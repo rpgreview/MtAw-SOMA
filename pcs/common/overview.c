@@ -14,10 +14,10 @@ void print_overview() {
     }
     printf("\n\n");
 
-    char *fmt = "%-9s %-24s\n";
-    printf(fmt, "* Concept:",     overview.concept);
-    printf(fmt, "* Virtue:",      overview.virtue);
-    printf(fmt, "* Vice:",        overview.vice);
+    char *fmt = "* %-8s %-24s\n";
+    printf(fmt, "Concept:",     overview.concept);
+    printf(fmt, "Virtue:",      overview.virtue);
+    printf(fmt, "Vice:",        overview.vice);
     printf("\n");
 
     printf("Aspirations:\n");
@@ -31,7 +31,7 @@ void print_overview() {
         printf("Obsessions:\n");
         int ob = 0;
         while(obsessions[ob] != NULL) {
-            printf("- %s\n", obsessions[ob++]);
+            printf("* %s\n", obsessions[ob++]);
         }
         printf("\n");
     }
