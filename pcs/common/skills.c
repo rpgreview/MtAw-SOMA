@@ -8,14 +8,21 @@ void print_skills() {
     printf("```\n");
     char buf[256];
     char dot_str[10];
+    bool unlocked_found = false;
     bool assets_found = false;
     bool rote_skills_found = false;
+    char unlocked_sym = '?';
     char asset_sym = '+';
     char rote_sym = '*';
     for(int s = 0; s < n_mental_skills; ++s) {
         for(int c = 0; c < n_categories; ++c) {
             memset(buf, 0, 256);
             int start = 0;
+            if(skills[c][s].is_unlocked) {
+                unlocked_found = true;
+                buf[start] = unlocked_sym;
+                ++start;
+            }
             if(skills[c][s].is_asset) {
                 assets_found = true;
                 buf[start] = asset_sym;
@@ -42,8 +49,11 @@ void print_skills() {
         printf("\n");
     }
 
-    if(assets_found || rote_skills_found) {
+    if(unlocked_found || assets_found || rote_skills_found) {
         printf("\n");
+    }
+    if(unlocked_found) {
+        printf("%c Skill unlocked: no penalty for zero dots\n", unlocked_sym);
     }
     if(assets_found) {
         printf("%c Professional Training Asset Skills\n", asset_sym);

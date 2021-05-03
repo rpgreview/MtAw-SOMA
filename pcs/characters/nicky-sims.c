@@ -58,34 +58,34 @@ int attributes[n_attribute_types][n_categories] = {
 };
 
 struct skill_t skills[n_categories][n_mental_skills] = {
-        /*{ Category,   Name,               Specialization, Dots,   Asset,   Order Rote Skill  } */
+        /*{ Category,   Name,               Specialization, Dots,   Unlock,  Asset,   Order Rote Skill  } */
     // Mental
-    {   { Mental,       "Academics",        NULL,           0,      false,   false  },
-        { Mental,       "Computer",         NULL,           1,      false,   false  },
-        { Mental,       "Crafts",           NULL,           1,      false,   false  },
-        { Mental,       "Investigation",    "Casing",       2,      false,   false  },
-        { Mental,       "Medicine",         NULL,           0,      false,   false  },
-        { Mental,       "Occult",           NULL,           0,      false,   false  },
-        { Mental,       "Politics",         NULL,           0,      false,   false  },
-        { Mental,       "Science",          NULL,           0,      false,   false  } },
+    {   { Mental,       "Academics",        NULL,           0,      false,   false,   false  },
+        { Mental,       "Computer",         NULL,           1,      false,   false,   false  },
+        { Mental,       "Crafts",           NULL,           1,      false,   false,   false  },
+        { Mental,       "Investigation",    "Casing",       2,      false,   false,   false  },
+        { Mental,       "Medicine",         NULL,           0,      false,   false,   false  },
+        { Mental,       "Occult",           NULL,           0,      false,   false,   false  },
+        { Mental,       "Politics",         NULL,           0,      false,   false,   false  },
+        { Mental,       "Science",          NULL,           0,      false,   false,   false  } },
     // Physical
-    {   { Physical,     "Athletics",        "Escape",       2,      false,   false  },
-        { Physical,     "Brawl",            NULL,           2,      false,   false  },
-        { Physical,     "Drive",            NULL,           0,      false,   false  },
-        { Physical,     "Firearms",         NULL,           1,      false,   false  },
-        { Physical,     "Larceny",          "Lockpicking",  3,      false,   false  },
-        { Physical,     "Stealth",          NULL,           1,      false,   false  },
-        { Physical,     "Survival",         NULL,           1,      false,   false  },
-        { Physical,     "Weaponry",         NULL,           1,      false,   false  } },
+    {   { Physical,     "Athletics",        "Escape",       2,      false,   false,   false  },
+        { Physical,     "Brawl",            NULL,           2,      false,   false,   false  },
+        { Physical,     "Drive",            NULL,           0,      false,   false,   false  },
+        { Physical,     "Firearms",         NULL,           1,      false,   false,   false  },
+        { Physical,     "Larceny",          "Lockpicking",  3,      false,   false,   false  },
+        { Physical,     "Stealth",          NULL,           1,      false,   false,   false  },
+        { Physical,     "Survival",         NULL,           1,      false,   false,   false  },
+        { Physical,     "Weaponry",         NULL,           1,      false,   false,   false  } },
     // Social
-    {   { Social,       "Animal Ken",       NULL,           0,      false,   false  },
-        { Social,       "Empathy",          NULL,           0,      false,   false  },
-        { Social,       "Expression",       NULL,           0,      false,   false  },
-        { Social,       "Intimidation",     NULL,           2,      false,   false  },
-        { Social,       "Persuasion",       NULL,           1,      false,   false  },
-        { Social,       "Socialize",        NULL,           0,      false,   false  },
-        { Social,       "Streetwise",       NULL,           2,      false,   false  },
-        { Social,       "Subterfuge",       NULL,           2,      false,   false  } }
+    {   { Social,       "Animal Ken",       NULL,           0,      false,   false,   false  },
+        { Social,       "Empathy",          NULL,           0,      false,   false,   false  },
+        { Social,       "Expression",       NULL,           0,      false,   false,   false  },
+        { Social,       "Intimidation",     NULL,           2,      false,   false,   false  },
+        { Social,       "Persuasion",       NULL,           1,      false,   false,   false  },
+        { Social,       "Socialize",        NULL,           0,      false,   false,   false  },
+        { Social,       "Streetwise",       NULL,           2,      false,   false,   false  },
+        { Social,       "Subterfuge",       NULL,           2,      false,   false,   false  } }
 };
 
 // Different specializations lead to different skill column widths.

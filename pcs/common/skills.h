@@ -43,6 +43,7 @@ struct skill_t {
     char *name;
     char *specialization;
     int  dots;
+    bool is_unlocked; // House rule: spend 1XP on a skill to remove the untrained penalty
     bool is_asset;
     bool is_order_rote_skill;
 };
