@@ -36,9 +36,9 @@ void print_overview() {
         printf("\n");
     }
 
-    printf("Unspent XP: %d\n", mundane_xp - mundane_xp_spent);
+    printf("* Unspent XP: %d\n", mundane_xp - mundane_xp_spent);
     if(awakened) {
-        printf("Unspent Arcane XP: %d\n", arcane_xp - arcane_xp_spent);
+        printf("* Unspent Arcane XP: %d\n", arcane_xp - arcane_xp_spent);
     }
 }
 
