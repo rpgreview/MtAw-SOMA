@@ -73,6 +73,7 @@ int integrity_modifier() {
 }
 
 void print_attributes() {
+    printf("```\n");
     char *dot_str;
     for(int i = 0; i < 64; ++i) {
         printf("%c", i % 21 ? '-' : '+');
@@ -152,4 +153,5 @@ void print_attributes() {
     dot_str = dots(perception, max(10, perception));
     printf(fmt, "Perception:", perception, dot_str);
     free(dot_str);
+    printf("```\n");
 }

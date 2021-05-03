@@ -5,6 +5,7 @@
 #include "common/skills.h"
 
 void print_skills() {
+    printf("```\n");
     char buf[256];
     char dot_str[10];
     bool assets_found = false;
@@ -50,6 +51,7 @@ void print_skills() {
     if(rote_skills_found) {
         printf("%c Order Rote Skills\n", rote_sym);
     }
+    printf("```\n");
 }
 
 void get_skill(struct skill_t *skill, const char *target) {

@@ -4,9 +4,11 @@
 #include "common/merits.h"
 
 void print_merits() {
+    printf("```\n");
     for(int m = 0; merits[m].name != NULL; ++m) {
         char *dot_str = dots(merits[m].dots, 5);
         printf(merit_fmt, merits[m].name, dot_str);
         free(dot_str);
     }
+    printf("```\n");
 }

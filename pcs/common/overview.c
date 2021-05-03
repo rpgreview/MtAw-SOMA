@@ -15,9 +15,9 @@ void print_overview() {
     printf("\n\n");
 
     char *fmt = "%-9s %-24s\n";
-    printf(fmt, "Concept:",     overview.concept);
-    printf(fmt, "Virtue:",      overview.virtue);
-    printf(fmt, "Vice:",        overview.vice);
+    printf(fmt, "* Concept:",     overview.concept);
+    printf(fmt, "* Virtue:",      overview.virtue);
+    printf(fmt, "* Vice:",        overview.vice);
     printf("\n");
 
     printf("Aspirations:\n");
