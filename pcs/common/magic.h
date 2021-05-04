@@ -2,6 +2,21 @@
 #include <stdbool.h>
 #include "common/skills.h"
 
+enum paths {
+    Acanthus,
+    Mastigos,
+    Moros,
+    Obrimos,
+    Thyrsus,
+    n_paths
+};
+
+enum manifestations {
+    Gross,
+    Subtle,
+    n_manifestations
+};
+
 enum arcana {
     Death,
     Fate,
@@ -16,15 +31,29 @@ enum arcana {
     n_arcana
 };
 
+enum arcanum_status {
+    Inferior,
+    Common,
+    Ruling,
+    n_arcanum_statuses
+};
+
+static char *arcanum_status_names[3] = {
+    "Inferior",
+    "Common",
+    "Ruling"
+};
+
 struct arcanum_t {
     char *name;
     int dots;
-    bool is_ruling;
-    bool is_inferior;
+    enum arcanum_status status;
+    enum paths path;
+    enum manifestations manifestation;
 };
 
-struct rote {
-    enum arcana arcanum;
+struct rote_t {
+    struct arcanum_t *arcanum;
     int level;
     char *spell;
     char *creator;
@@ -35,6 +64,11 @@ extern bool awakened;
 extern int gnosis;
 extern int wisdom;
 extern char *obsessions[];
+extern struct arcanum_t arcana[n_arcana];
+extern struct rote_t rotes[];
 
 extern int arcane_xp;
 extern int arcane_xp_spent;
+
+void print_arcana();
+void print_rotes();

@@ -106,6 +106,24 @@ struct merit merits[] = {
 // Customise yours here.
 char *merit_fmt = "%-40s %s\n";
 
+struct arcanum_t arcana[n_arcana] = {
+    /* Name     Dots    Status  Path        Manifestation */
+    { "Death",  0,      Common, Moros,      Subtle  },
+    { "Fate",   0,      Common, Acanthus,   Subtle  },
+    { "Forces", 0,      Common, Obrimos,    Gross   },
+    { "Life",   0,      Common, Thyrsus,    Gross   },
+    { "Matter", 0,      Common, Moros,      Gross   },
+    { "Mind",   0,      Common, Mastigos,   Subtle  },
+    { "Prime",  0,      Common, Obrimos,    Subtle  },
+    { "Space",  0,      Common, Mastigos,   Gross   },
+    { "Spirit", 0,      Common, Thyrsus,    Subtle  },
+    { "Time",   0,      Common, Acanthus,   Gross   }
+};
+
+struct rote_t rotes[] = {
+    { NULL, 0, NULL, NULL, NULL }
+};
+
 struct mundane_equipment_t misc_gear[] = {
     { NULL, 0, 0, 0, 0 }
 };

@@ -8,6 +8,7 @@
 #include "common/skills.h"
 #include "common/merits.h"
 #include "common/inventory.h"
+#include "common/magic.h"
 
 char *dots(int ndots, int max_dots) {
     const char *dot = "\xE2\x97\x8F";
@@ -79,6 +80,16 @@ void print_character() {
     print_header("Merits");
     print_merits();
     printf("\n");
+
+    if(awakened) {
+        print_header("Arcana");
+        print_arcana();
+        printf("\n");
+
+        print_header("Rotes");
+        print_rotes();
+        printf("\n");
+    }
 
     print_header("Gear");
     print_mundane_equipment();
