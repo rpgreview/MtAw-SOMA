@@ -16,6 +16,7 @@ int defense = 0;
 int armor = 0;
 int initiative = 0;
 int perception = 0;
+int recovery = 0;
 
 void print_attribute_type_name(enum attribute_type t) {
     switch(t) {
@@ -152,6 +153,10 @@ void print_attributes() {
 
     dot_str = dots(perception, max(10, perception));
     printf(fmt, "Perception:", perception, dot_str);
+    free(dot_str);
+
+    dot_str = dots(recovery, max(10, recovery));
+    printf(fmt, "Recovery:", recovery, dot_str);
     free(dot_str);
     printf("```\n");
 }

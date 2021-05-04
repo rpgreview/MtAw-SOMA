@@ -42,6 +42,7 @@ extern int defense;
 extern int armor;
 extern int initiative;
 extern int perception;
+extern int recovery;
 
 void attribute_to_coords(struct attribute_coordinates_t *coords, enum attributes attr);
 void print_attribute_type_name(enum attribute_type t);

@@ -48,6 +48,7 @@ void calculate_secondary_stats() {
     speed = get_attribute(Strength) + get_attribute(Dexterity) + 5;
     initiative = get_attribute(Dexterity) + get_attribute(Composure);
     perception = get_attribute(Wits) + get_attribute(Composure);
+    recovery = get_attribute(Resolve) + get_attribute(Stamina);
 
     struct skill_t athletics;
     get_skill(&athletics, "Athletics");
