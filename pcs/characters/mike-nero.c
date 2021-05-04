@@ -27,6 +27,8 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Faction     */ "",
     /* Group       */ "",
+    /* Path        */ "",
+    /* Order       */ "",
     /* Quote       */ "Apply pressure.",
     /* Background  */ "Michael’s a hard worker. He always has been. When he was young, Michael spent his summers helping his grandfather renovate the family’s vacation house. It was his escape from the harsh city and its dangers. He was convinced that everyone in his family was going to get mugged or hit by a drunk driver or any number of other morbid nightmares he had about the city’s horrors. But it was different here. Calm, soothing. He rehung walls with his grandfather, installed new windows and even helped out with the roofing. It was nice to do things with his hands, to see the immediate difference from his work.\n\n\
 One day, while he was on the roof, he saw his grandfather fall in the yard. He whispered to the boy that it felt like a demon was sitting on his chest. By the time the paramedics arrived, Michael’s grandfather was dead. They tried for twenty minutes to resuscitate him, but there was nothing they could do.\n\n\

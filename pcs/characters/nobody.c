@@ -26,6 +26,8 @@ struct character_overview overview = {
     /* Faction     */ "",
     /* Group       */ "",
     /* Quote       */ "",
+    /* Path        */ "",
+    /* Order       */ "",
     /* Background  */ "",
     /* Description */ "",
     /* RP Hints    */ ""

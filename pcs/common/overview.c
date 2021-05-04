@@ -19,6 +19,10 @@ void print_overview() {
     printf(fmt, "Concept:",     overview.concept);
     printf(fmt, "Virtue:",      overview.virtue);
     printf(fmt, "Vice:",        overview.vice);
+    if(awakened) {
+        printf(fmt, "Path:",    overview.path);
+        printf(fmt, "Order:",   overview.order);
+    }
     printf("\n");
 
     printf("Aspirations:\n");
