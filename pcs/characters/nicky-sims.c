@@ -131,6 +131,10 @@ struct rote_t rotes[] = {
     { NULL, 0, NULL, NULL, NULL }
 };
 
+char *praxes[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     { NULL, 0, 0, 0, 0 }
 };

@@ -35,3 +35,9 @@ void print_rotes() {
     }
     printf("```\n");
 }
+
+void print_praxes() {
+    printf("```\n");
+    for(int p = 0; praxes[p] != NULL; printf("%s\n", praxes[p++]));
+    printf("```\n");
+}

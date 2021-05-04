@@ -66,9 +66,11 @@ extern int wisdom;
 extern char *obsessions[];
 extern struct arcanum_t arcana[n_arcana];
 extern struct rote_t rotes[];
+extern char *praxes[];
 
 extern int arcane_xp;
 extern int arcane_xp_spent;
 
 void print_arcana();
 void print_rotes();
+void print_praxes();

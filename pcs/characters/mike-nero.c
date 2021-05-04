@@ -128,6 +128,10 @@ struct rote_t rotes[] = {
     { NULL, 0, NULL, NULL, NULL }
 };
 
+char *praxes[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     // Equipment,           Durability, Structure,  Size,   Cost);
     { "First Aid Kit +1",   1,          3,          2,      2 },

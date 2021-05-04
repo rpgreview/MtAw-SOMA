@@ -89,6 +89,10 @@ void print_character() {
         print_header("Rotes");
         print_rotes();
         printf("\n");
+
+        print_header("Praxes");
+        print_praxes();
+        printf("\n");
     }
 
     print_header("Gear");
