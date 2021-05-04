@@ -25,9 +25,9 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Faction     */ "",
     /* Group       */ "",
-    /* Quote       */ "",
     /* Path        */ "",
     /* Order       */ "",
+    /* Quote       */ "",
     /* Background  */ "",
     /* Description */ "",
     /* RP Hints    */ ""
