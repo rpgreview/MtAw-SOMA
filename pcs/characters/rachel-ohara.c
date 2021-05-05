@@ -44,6 +44,7 @@ char *aspirations[] = {
 };
 
 char *obsessions[] = {
+    "Collapse of the USSR",
     NULL
 };
 
@@ -150,4 +151,10 @@ void advancement() {
 
     // After witnessing several uncanny event, Rachel is starting to feel like she's seen it all, and things don't phase her as much.
     ++attributes[Resistance][Social];
+
+    // Rachel Awakens
+    awakened = true;
+    gnosis = 1;
+    wisdom = integrity;
+    integrity = 0;
 }
