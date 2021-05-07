@@ -5,6 +5,23 @@
 #include "common/skills.h"
 
 void print_skills() {
+    int max_skill_name_len[n_categories] = { 0, 0, 0 };
+    for(int c = 0; c < n_categories; ++c) {
+        for(int s = 0; s < n_mental_skills; ++s) {
+            int tag_len = skills[c][s].is_unlocked + skills[c][s].is_asset + skills[c][s].is_order_rote_skill;
+            if(tag_len > 0) {
+                // We'll add a space
+                ++tag_len;
+            }
+            int spec_len = 0;
+            if(skills[c][s].specialization != NULL) {
+                // Need room for both the specialization itself, a pair of parentheses, and a space
+                spec_len = strnlen(skills[c][s].specialization, 64) + 3;
+            }
+            int this_skill_len = tag_len + strnlen(skills[c][s].name, 64) + spec_len;
+            max_skill_name_len[c] = max(max_skill_name_len[c], this_skill_len);
+        }
+    }
     printf("```\n");
     char buf[256];
     char dot_str[10];
@@ -43,8 +60,12 @@ void print_skills() {
                 strncat(buf, ")", 2);
             }
             char *dot_str = dots(skills[c][s].dots, 5);
-            printf(skill_column_fmt[c], buf, dot_str);
+            printf("%-*s %15s", max_skill_name_len[c], buf, dot_str);
             free(dot_str);
+            if(c < n_categories-1) {
+                // Add some padding between columns
+                printf("%-6s", "");
+            }
         }
         printf("\n");
     }

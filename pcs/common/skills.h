@@ -49,7 +49,6 @@ struct skill_t {
 };
 
 extern struct skill_t skills[n_categories][n_mental_skills];
-extern char *skill_column_fmt[3];
 
 void print_skills();
 void get_skill(struct skill_t *s, const char *target);

@@ -87,14 +87,6 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Social,       "Subterfuge",       NULL,           1,      false,   false,   false  } }
 };
 
-// Different specializations lead to different skill column widths.
-// Rule of thumb: keep second number at 21, adjust first number according to skill name + specialization
-char *skill_column_fmt[3] = {
-    "%-22s %-21s",
-    "%-10s %-21s",
-    "%-17s %s"
-};
-
 struct merit merits[] = {
     { "Status (Paramedic)",         1 },
     { "Tolerance for Biology",      1 },

@@ -79,14 +79,6 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Social,       "Subterfuge",       NULL,           0,      false,   false,   false  } }
 };
 
-// Different specializations lead to different skill column widths.
-// Best to customise the widths for your character from the start.
-char *skill_column_fmt[3] = {
-    "%-13s %-21s",
-     "%-9s %-21s",
-    "%-12s %s"
-};
-
 struct merit merits[] = {
     { NULL,                         0 }
 };
