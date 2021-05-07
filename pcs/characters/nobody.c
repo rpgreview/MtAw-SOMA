@@ -26,8 +26,8 @@ struct character_overview overview = {
     /* Faction     */ "",
     /* Group       */ "",
     /* Path        */ "",
-    /* Order       */ "",
-    /* Quote       */ "",
+    /* Order       */ NULL,
+    /* Quote       */ NULL,
     /* Background  */ "",
     /* Description */ "",
     /* RP Hints    */ ""
@@ -84,7 +84,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 char *skill_column_fmt[3] = {
     "%-13s %-21s",
      "%-9s %-21s",
-    "%-12s %-21s"
+    "%-12s %s"
 };
 
 struct merit merits[] = {

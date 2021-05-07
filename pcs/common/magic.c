@@ -29,9 +29,9 @@ void print_arcana() {
 
 void print_rotes() {
     printf("```\n");
-    printf(    "%-7s %-5s %-16s %-16s %-12s\n", "Arcanum",              "Level",        "Spell",        "Creator",          "Rote Skill");
+    printf(    "%-7s %-5s %-16s %-16s %s\n", "Arcanum",              "Level",        "Spell",        "Creator",          "Rote Skill");
     for(int r = 0; rotes[r].spell != NULL; ++r) {
-        printf("%-7s %5d %-16s %-16s %-12s\n",  rotes[r].arcanum->name, rotes[r].level, rotes[r].spell, rotes[r].creator,   rotes[r].rote_skill->name);
+        printf("%-7s %5d %-16s %-16s %s\n",  rotes[r].arcanum->name, rotes[r].level, rotes[r].spell, rotes[r].creator,   rotes[r].rote_skill->name);
     }
     printf("```\n");
 }

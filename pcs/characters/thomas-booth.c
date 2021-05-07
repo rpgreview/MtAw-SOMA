@@ -27,8 +27,8 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Faction     */ "",
     /* Group       */ "",
-    /* Path        */ "",
-    /* Order       */ "",
+    /* Path        */ NULL,
+    /* Order       */ NULL,
     /* Quote       */ "Sure, I can help you study. Come over around… seven?",
     /* Background  */ "A bright child, Thomas grew up on the university campus where his parents taught. His mother was an English professor, while his father coached the school’s baseball team. Each of his parents made (what they thought were) subtle attempts to encourage Thom’s interest in their chosen passion, but he never understood why he couldn’t love both. Throughout school, Thomas pursued three things: knowledge, athletics and girls, not necessarily in that order. By the time he actually enrolled at the university he was already well-known to the faculty. They kept an eye on him like family, which turned out to be a double-edged sword. They were glad to help, but just as glad to dish out advice and meddle in his affairs. (“Oh Thomas, I don’t mean to pry, but do you really mean to date her? She’s a C student at best. You can do better.”)\n\n\
 Eventually, it became something of a badge of honor for his professors to disapprove of his girlfriends. But that’s where his rebellion stopped. He worked his way through the university and graduated with a degree in English before getting his masters in library science.\n\n\
@@ -90,7 +90,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 char *skill_column_fmt[3] = {
     "%-24s %-21s",
     "%-19s %-21s",
-    "%-18s %-21s"
+    "%-18s %s"
 };
 
 struct merit merits[] = {

@@ -81,12 +81,12 @@ void print_attributes() {
     }
     printf("\n");
     for(int t = 0; t < n_attribute_types; ++t) {
-        printf("%-2s", "|");
         for(int c = 0; c < n_categories; ++c) {
             dot_str = dots(attributes[t][c], 5);
-            printf("%-12s %s | ", attribute_names[t][c], dot_str, "|");
+            printf("| %-12s %s ", attribute_names[t][c], dot_str, "|");
             free(dot_str);
         }
+        printf("|");
         printf("\n");
     }
     for(int i = 0; i < 64; ++i) {
