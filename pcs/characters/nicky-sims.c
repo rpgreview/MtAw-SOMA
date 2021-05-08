@@ -25,8 +25,6 @@ struct character_overview overview = {
     /* Vice        */ "Wrath. Nishan tries to remain hopeful, to believe in another way, but his life has continually presented him with obstacles that needed to be knocked down.",
     /* Concept     */ "Small Time Hood",
     /* Chronicle   */ "SOMA",
-    /* Faction     */ "",
-    /* Group       */ "",
     /* Path        */ NULL,
     /* Order       */ NULL,
     /* Quote       */ "I do what I gotta do.",

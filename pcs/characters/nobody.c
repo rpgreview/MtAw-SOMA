@@ -23,8 +23,6 @@ struct character_overview overview = {
     /* Vice        */ "",
     /* Concept     */ "",
     /* Chronicle   */ "SOMA",
-    /* Faction     */ "",
-    /* Group       */ "",
     /* Path        */ "",
     /* Order       */ NULL,
     /* Quote       */ NULL,

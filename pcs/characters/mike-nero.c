@@ -25,8 +25,6 @@ struct character_overview overview = {
     /* Vice        */ "Painkiller Addiction",
     /* Concept     */ "Strung Out Paramedic",
     /* Chronicle   */ "SOMA",
-    /* Faction     */ "",
-    /* Group       */ "",
     /* Path        */ NULL,
     /* Order       */ NULL,
     /* Quote       */ "Apply pressure.",

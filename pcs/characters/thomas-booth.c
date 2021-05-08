@@ -25,8 +25,6 @@ struct character_overview overview = {
     /* Vice        */ "Lust. Thomas has a definite weakness for the ladies.",
     /* Concept     */ "Rugged Librarian",
     /* Chronicle   */ "SOMA",
-    /* Faction     */ "",
-    /* Group       */ "",
     /* Path        */ NULL,
     /* Order       */ NULL,
     /* Quote       */ "Sure, I can help you study. Come over around… seven?",

@@ -9,8 +9,6 @@ struct character_overview {
     char *vice;
     char *concept;
     char *chronicle;
-    char *faction;
-    char *group;
     char *path;
     char *order;
     char *quote;

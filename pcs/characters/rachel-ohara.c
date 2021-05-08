@@ -25,8 +25,6 @@ struct character_overview overview = {
     /* Vice        */ "Alcoholic",
     /* Concept     */ "Old-fashioned Cop",
     /* Chronicle   */ "SOMA",
-    /* Faction     */ "",
-    /* Group       */ "",
     /* Path        */ NULL,
     /* Order       */ NULL,
     /* Quote       */ "Put on the cuffs and I won’t have to hurt you.",
