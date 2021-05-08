@@ -9,6 +9,9 @@ void print_merits() {
     for(int m = 0; merits[m].name != NULL; ++m) {
         max_merits_name_len = max(max_merits_name_len, strnlen(merits[m].name, 256));
     }
+    if(max_merits_name_len == 0) {
+        return;
+    }
     printf("```\n");
     for(int m = 0; merits[m].name != NULL; ++m) {
         char *dot_str = dots(merits[m].dots, 5);

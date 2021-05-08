@@ -101,8 +101,13 @@ void print_character() {
     print_weapons();
     printf("\n");
 
-    print_header("Notes");
-    print_notes();
+    if(overview.quote != NULL
+        || overview.background != NULL
+        || overview.description != NULL
+        || overview.roleplaying_hints != NULL) {
+        print_header("Notes");
+        print_notes();
+    }
 }
 
 int main(int argc, char **argv) {

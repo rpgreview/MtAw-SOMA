@@ -15,10 +15,10 @@ void print_overview() {
     printf("\n\n");
 
     char *fmt = "* %-8s %s\n";
-    printf(fmt, "Player:",      overview.player);
-    printf(fmt, "Concept:",     overview.concept);
-    printf(fmt, "Virtue:",      overview.virtue);
-    printf(fmt, "Vice:",        overview.vice);
+    printf(fmt, "Player:",  overview.player  == NULL ? "" : overview.player);
+    printf(fmt, "Concept:", overview.concept == NULL ? "" : overview.concept);
+    printf(fmt, "Virtue:",  overview.virtue  == NULL ? "" : overview.virtue);
+    printf(fmt, "Vice:",    overview.vice    == NULL ? "" : overview.vice);
     if(awakened) {
         if(overview.path != NULL) {
             printf(fmt, "Path:",    overview.path);
@@ -53,10 +53,35 @@ void print_overview() {
 }
 
 void print_notes() {
-    printf("### Quote\n\n");
-    printf("“%s”\n\n\n", overview.quote);
-    printf("### Background\n\n");
-    printf("%s\n\n\n", overview.background);
-    printf("### Description\n\n");
-    printf("%s\n", overview.roleplaying_hints);
+    bool set_up_eol = false;
+    if(overview.quote != NULL) {
+        printf("### Quote\n\n");
+        printf("“%s”\n", overview.quote);
+        set_up_eol = true;
+    }
+    if(overview.background != NULL) {
+        if(set_up_eol) {
+            printf("\n\n");
+        } else {
+            set_up_eol = true;
+        }
+        printf("### Background\n\n");
+        printf("%s\n", overview.background);
+    }
+    if(overview.description != NULL) {
+        if(set_up_eol) {
+            printf("\n\n");
+        } else {
+            set_up_eol = true;
+        }
+        printf("### Description\n\n");
+        printf("%s\n", overview.description);
+    }
+    if(overview.roleplaying_hints != NULL) {
+        if(set_up_eol) {
+            printf("\n\n");
+        }
+        printf("### Roleplaying Hints\n\n");
+        printf("%s\n", overview.roleplaying_hints);
+    }
 }

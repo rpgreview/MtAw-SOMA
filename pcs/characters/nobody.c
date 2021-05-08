@@ -19,16 +19,16 @@ struct character_overview overview = {
     /* Name        */ "Nobody",
     /* Age         */ "",
     /* Player      */ PLAYER_NAME,
-    /* Virtue      */ "",
-    /* Vice        */ "",
-    /* Concept     */ "",
+    /* Virtue      */ NULL,
+    /* Vice        */ NULL,
+    /* Concept     */ NULL,
     /* Chronicle   */ "SOMA",
-    /* Path        */ "",
+    /* Path        */ NULL,
     /* Order       */ NULL,
     /* Quote       */ NULL,
-    /* Background  */ "",
-    /* Description */ "",
-    /* RP Hints    */ ""
+    /* Background  */ NULL,
+    /* Description */ NULL,
+    /* RP Hints    */ NULL
 };
 
 char *aspirations[] = {
