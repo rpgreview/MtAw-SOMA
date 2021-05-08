@@ -6,6 +6,5 @@ struct merit {
 };
 
 extern struct merit merits[];
-extern char *merit_fmt;
 
 void print_merits();

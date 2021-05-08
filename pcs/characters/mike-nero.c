@@ -98,10 +98,6 @@ struct merit merits[] = {
     { NULL,                         0 },
 };
 
-// Like skill columns, merit widths vary a lot per character.
-// Customise yours here.
-char *merit_fmt = "%-25s %s\n";
-
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Common,     Moros,      Subtle  },
