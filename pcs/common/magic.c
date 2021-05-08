@@ -45,6 +45,11 @@ void print_rote(char *arcanum, int level, int max_arcanum_chars, char *spell_nam
 }
 
 void print_rotes() {
+    if(rotes[0].spell == NULL) {
+        printf("None\n");
+        return;
+    }
+
     // Grab the longest names for the format string
     char *arcanum_header = "Arcanum";
     int max_arcanum_chars = strnlen(arcanum_header, 32);
@@ -63,7 +68,6 @@ void print_rotes() {
         max_rote_skill_len = max(max_rote_skill_len, strnlen(rotes[r].rote_skill->name, 64));
     }
 
-    printf("```\n");
     // Construct a "+---------+-----------+" style table border
     int ncols = 4;
     int padding_per_field = 3; // "+-" corresponding to the start of each field and another "-" at the end
@@ -80,6 +84,8 @@ void print_rotes() {
     *(cursor += padding_per_field + max_rote_skill_len)     = corner;
     *(++cursor) = '\0';
 
+    // Do the actual printing
+    printf("```\n");
     printf("%s\n", rote_border);
     print_rote(arcanum_header, 0, max_arcanum_chars, spell_name_header, max_spell_name_len, creator_name_header, max_creator_name_len, rote_skill_header, max_rote_skill_len);
     printf("%s\n", rote_border);
@@ -91,6 +97,10 @@ void print_rotes() {
 }
 
 void print_praxes() {
+    if(praxes[0] == NULL) {
+        printf("None\n");
+        return;
+    }
     printf("```\n");
     for(int p = 0; praxes[p] != NULL; printf("%s\n", praxes[p++]));
     printf("```\n");
