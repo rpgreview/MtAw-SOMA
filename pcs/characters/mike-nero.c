@@ -67,7 +67,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Mental,       "Science",          "Chemistry",    3,      false,   false,   false  } },
     // Physical
     {   { Physical,     "Athletics",        NULL,           1,      false,   false,   false  },
-        { Physical,     "Brawl",            NULL,           0,      true,    false,   false  },
+        { Physical,     "Brawl",            NULL,           1,      false,   false,   false  },
         { Physical,     "Drive",            NULL,           1,      false,   true,    false  },
         { Physical,     "Firearms",         NULL,           0,      false,   false,   false  },
         { Physical,     "Larceny",          NULL,           1,      false,   false,   false  },
@@ -135,5 +135,6 @@ void advancement() {
     // Where to note experience expenditures
 
     // Unlock Brawl
+    ++mundane_xp_spent;
     ++mundane_xp_spent;
 }
