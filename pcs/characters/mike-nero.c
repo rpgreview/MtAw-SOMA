@@ -51,7 +51,7 @@ int attributes[n_attribute_types][n_categories] = {
                    /* MENTAL                    PHYSICAL                SOCIAL       */
 /* POWER      */ { /* Intelligence */ 3,     /* Strength  */ 2,      /* Presence     */  1 },
 /* FINESSE    */ { /* Wits         */ 3,     /* Dexterity */ 2,      /* Manipulation */  1 },
-/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 3,      /* Composure    */  4 }
+/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 3,      /* Composure    */  5 }
 };
 
 struct skill_t skills[n_categories][n_mental_skills] = {
