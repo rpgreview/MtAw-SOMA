@@ -37,7 +37,8 @@ Thomas moved into Hill Manor Apartments just over a year ago. He likes the place
 };
 
 char *aspirations[] = {
-    "Seduce someone",
+    "Acquire an impressive item to hang in apartment.",
+    "Find a mentor or book about local history and folklore.",
     NULL
 };
 

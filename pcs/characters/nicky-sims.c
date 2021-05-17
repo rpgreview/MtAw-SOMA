@@ -42,6 +42,8 @@ As the pay got better, Nicky moved into Hill Manor Apartments. He pays his rent 
 };
 
 char *aspirations[] = {
+    "Rescue someone",
+    "Put a bad guy in hospital",
     NULL
 };
 
@@ -123,7 +125,9 @@ char *praxes[] = {
 };
 
 struct mundane_equipment_t misc_gear[] = {
-    { NULL, 0, 0, 0, 0 }
+    /* Equipment                Durability  Structure   Size    Cost */
+    { "1yr membership, MoRI",   1,          1,          1,      2   },
+    { NULL,                     0,          0,          0,      0   }
 };
 
 struct weapon_t weapons[] = {

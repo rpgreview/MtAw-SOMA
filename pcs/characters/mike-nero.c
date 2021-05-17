@@ -40,6 +40,7 @@ But the pills take the edge off that.",
 char *aspirations[] = {
     "Give someone hope",
     "Save someone's life",
+    "Find more of the numenous",
     NULL
 };
 
@@ -122,6 +123,7 @@ char *praxes[] = {
 struct mundane_equipment_t misc_gear[] = {
     // Equipment,           Durability, Structure,  Size,   Cost);
     { "First Aid Kit +1",   1,          3,          2,      2 },
+    { "Crime Scene Kit",    2,          2,          3,      2 },
     { NULL, 0, 0, 0, 0 }
 };
 
