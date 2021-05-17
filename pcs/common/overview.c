@@ -34,17 +34,20 @@ void print_overview() {
     while(aspirations[c] != NULL) {
         printf("- %s\n", aspirations[c++]);
     }
-    printf("\n");
 
     if(awakened) {
+        printf("\n");
         printf("Obsessions:\n");
         int ob = 0;
         while(obsessions[ob] != NULL) {
             printf("* %s\n", obsessions[ob++]);
         }
-        printf("\n");
     }
 
+    if(overview.is_npc) {
+        return;
+    }
+    printf("\n");
     printf("Unspent XP:\n");
     printf("* Normal XP: %d\n", mundane_xp - mundane_xp_spent);
     if(awakened) {
