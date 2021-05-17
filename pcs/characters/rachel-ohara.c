@@ -33,7 +33,8 @@ Joe was a cop, old fashioned and hard-nosed. Rachel’s granddad once told her t
 She worked her way up from pounding pavement on the street to her current position as a detective. When she got her detective badge, her granddad told her it was “adequate,” despite the fact that he’d never made detective in his entire career.\n\n\
 Rachel moved into Hill Manor apartments with a guy, but they broke up. She liked the place, so she kept it. She even likes the poker game, though she has a feeling Mike’s got a problem.",
     /* Description */ "Rachel has shoulder-length brown hair that she usually keeps pulled back into a ponytail, and a scattering of freckles across her strong face. Physically, she’s pretty, but the tension in her—the intensity—makes her beautiful.",
-    /* RP Hints    */ "You’re constantly trying to prove yourself. You grew up on the crossroads between two worlds, and you were never quite good enough for either. So you have to be better than both. Given the situation here, your first priority is to gather survivors and protect them while leading your people out of this."
+    /* RP Hints    */ "You’re constantly trying to prove yourself. You grew up on the crossroads between two worlds, and you were never quite good enough for either. So you have to be better than both. Given the situation here, your first priority is to gather survivors and protect them while leading your people out of this.",
+    /* Is NPC?     */ false
 };
 
 char *aspirations[] = {

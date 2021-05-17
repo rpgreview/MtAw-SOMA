@@ -33,7 +33,8 @@ Eventually, it became something of a badge of honor for his professors to disapp
 For Thomas, the decision was always easy. He knew he wasn’t good enough to go pro, no matter how much he loved baseball. He also couldn’t imagine leaving the halls of academia. It afforded him access to books and kept him on campus which means, at least for now, that it keeps him close to girls. Eventually, he’ll grow up and settle down, but he sees no reason to do that just yet.\n\n\
 Thomas moved into Hill Manor Apartments just over a year ago. He likes the place; it’s a far cry from the wood paneling and old world design of his parents’ house, but the early 20th century architecture of the building feels familiar. Within a month, Thomas was recruited by Janice for the poker game. Another neighbor, Keenan is a student at the university, and Thomas knows him from the library.",
     /* Description */ "Thomas is a wiry man of average height, with brown hair. He plays to his strengths, dressing well, with a kind of geek chic that makes him attractive instead of nerdy. He carries himself with a grace and athleticism that surprises people who expect the awkward and clumsy stereotypical librarian.",
-    /* RP Hints    */ "You’re smart, but not in a pedantic way. You use your observational skills and knowledge to surprise and impress people, particularly girls, not to make them feel stupid. On the other hand, you’re nearly as comfortable on the field as in the library, so you’re not afraid to get your hands dirty."
+    /* RP Hints    */ "You’re smart, but not in a pedantic way. You use your observational skills and knowledge to surprise and impress people, particularly girls, not to make them feel stupid. On the other hand, you’re nearly as comfortable on the field as in the library, so you’re not afraid to get your hands dirty.",
+    /* Is NPC?     */ false
 };
 
 char *aspirations[] = {

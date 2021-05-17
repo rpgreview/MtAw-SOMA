@@ -15,6 +15,7 @@ struct character_overview {
     char *background;
     char *description;
     char *roleplaying_hints;
+    bool is_npc;
 };
 
 extern struct character_overview overview;

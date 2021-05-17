@@ -28,7 +28,8 @@ struct character_overview overview = {
     /* Quote       */ NULL,
     /* Background  */ NULL,
     /* Description */ NULL,
-    /* RP Hints    */ NULL
+    /* RP Hints    */ NULL,
+    /* Is NPC?     */ true
 };
 
 char *aspirations[] = {
