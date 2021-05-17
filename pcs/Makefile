@@ -1,12 +1,16 @@
 .PHONY: all clean
 
 PCS=$(basename $(notdir $(wildcard characters/*.c)))
+NPCS=$(basename $(notdir $(wildcard npcs/*.c)))
 $(info PCS is $(PCS))
 
-all: $(PCS)
+all: $(PCS) $(NPCS)
 
 $(PCS):
-	gcc -o $@ -I./ common/*.c characters/$@.c
+	gcc -o bin/$@ -I./ common/*.c characters/$@.c
+
+$(NPCS):
+	gcc -o bin/$@ -I./ common/*.c npcs/$@.c
 
 clean:
-	rm -vf $(PCS)
+	rm -vf bin/$(PCS) bin/$(NPCS)
