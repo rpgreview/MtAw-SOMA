@@ -25,7 +25,7 @@ struct character_overview overview = {
     /* Vice        */ "Wrath. Nishan tries to remain hopeful, to believe in another way, but his life has continually presented him with obstacles that needed to be knocked down.",
     /* Concept     */ "Small Time Hood",
     /* Chronicle   */ "SOMA",
-    /* Path        */ NULL,
+    /* Path        */ "Mastigos",
     /* Order       */ NULL,
     /* Quote       */ "I do what I gotta do.",
     /* Background  */ "Nishan grew up a nomad. His father kept him moving, from one score to the next, across the rapidly changing landscape of the former Soviet Union. He sat in the back of a Lada Niva playing with toys while his father brokered drug deals in Gori. As a teen, he kept a lookout for Russian authorities while his father broke into a house in Moscow. When they came, he ran.\n\n\
@@ -109,9 +109,9 @@ struct arcanum_t arcana[n_arcana] = {
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
-    { "Mind",   0,      Common,     Mastigos,   Subtle  },
+    { "Mind",   0,      Ruling,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
-    { "Space",  0,      Common,     Mastigos,   Gross   },
+    { "Space",  0,      Ruling,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
     { "Time",   0,      Common,     Acanthus,   Gross   }
 };
