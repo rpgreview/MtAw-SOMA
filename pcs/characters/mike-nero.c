@@ -41,7 +41,7 @@ But the pills take the edge off that.",
 char *aspirations[] = {
     "Give someone hope",
     "Save someone's life",
-    "Find more of the numenous",
+    "Find more of the numinous",
     NULL
 };
 
