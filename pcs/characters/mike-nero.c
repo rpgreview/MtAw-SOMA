@@ -39,13 +39,11 @@ But the pills take the edge off that.",
 };
 
 char *aspirations[] = {
-    "Give someone hope",
-    "Save someone's life",
-    "Find more of the numinous",
     NULL
 };
 
 char *obsessions[] = {
+    "Askuanebi",
     NULL
 };
 
@@ -143,4 +141,10 @@ void advancement() {
 
     // Get a generous inheritance: Resources += 3
     mundane_xp_spent += 3;
+
+    // Nero Awakens
+    awakened = true;
+    gnosis = 1;
+    wisdom = integrity;
+    integrity = 0;
 }

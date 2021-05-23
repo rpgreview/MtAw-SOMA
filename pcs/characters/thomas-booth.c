@@ -39,11 +39,12 @@ Thomas moved into Hill Manor Apartments just over a year ago. He likes the place
 
 char *aspirations[] = {
     "Acquire an impressive item to hang in apartment.",
-    "Find a mentor or book about local history and folklore.",
+    "Meet someone with connection to Salem witch trials, preferably someone who was actually there ;)",
     NULL
 };
 
 char *obsessions[] = {
+    "Esoteric subtexts in the writings of Nathaniel Hawthorne",
     NULL
 };
 
@@ -133,4 +134,10 @@ void advancement() {
 
     // After witnessing several uncanny event, Thomas is starting to feel like he's seen it all, and things don't phase him as much.
     ++attributes[Resistance][Social];
+
+    // Thomas Awakens
+    awakened = true;
+    gnosis = 1;
+    wisdom = integrity;
+    integrity = 0;
 }
