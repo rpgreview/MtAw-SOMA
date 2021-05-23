@@ -90,7 +90,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 struct merit merits[] = {
     { "Status (Paramedic)",         1 },
     { "Tolerance for Biology",      1 },
-    { "Resources",                  2 },
+    { "Resources",                  5 },
     { "Good Time Management",       1 },
     { "Prof Training (Paramedic)",  2 },
     { "Contacts (Doctors, Cops)",   2 }, // Due to Prof Training
@@ -140,4 +140,7 @@ void advancement() {
     // Unlock Brawl
     ++mundane_xp_spent;
     ++mundane_xp_spent;
+
+    // Get a generous inheritance: Resources += 3
+    mundane_xp_spent += 3;
 }
