@@ -123,6 +123,8 @@ struct mundane_equipment_t misc_gear[] = {
     // Equipment,           Durability, Structure,  Size,   Cost);
     { "First Aid Kit +1",   1,          3,          2,      2 },
     { "Crime Scene Kit",    2,          2,          3,      2 },
+    { "Scuba Gear",         2,          3,          3,      2 },
+    { "Submersible Drone",  2,          3,          2,      3 },
     { NULL, 0, 0, 0, 0 }
 };
 
