@@ -39,6 +39,7 @@ Rachel moved into Hill Manor apartments with a guy, but they broke up. She liked
 
 char *aspirations[] = {
     "Bring down a powerful crime boss",
+    "Go for a week without drinking",
     NULL
 };
 
