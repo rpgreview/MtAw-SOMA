@@ -25,7 +25,7 @@ struct character_overview overview = {
     /* Vice        */ "Lust. Thomas has a definite weakness for the ladies.",
     /* Concept     */ "Rugged Librarian",
     /* Chronicle   */ "SOMA",
-    /* Path        */ NULL,
+    /* Path        */ "Acanthus",
     /* Order       */ NULL,
     /* Quote       */ "Sure, I can help you study. Come over around… seven?",
     /* Background  */ "A bright child, Thomas grew up on the university campus where his parents taught. His mother was an English professor, while his father coached the school’s baseball team. Each of his parents made (what they thought were) subtle attempts to encourage Thom’s interest in their chosen passion, but he never understood why he couldn’t love both. Throughout school, Thomas pursued three things: knowledge, athletics and girls, not necessarily in that order. By the time he actually enrolled at the university he was already well-known to the faculty. They kept an eye on him like family, which turned out to be a double-edged sword. They were glad to help, but just as glad to dish out advice and meddle in his affairs. (“Oh Thomas, I don’t mean to pry, but do you really mean to date her? She’s a C student at best. You can do better.”)\n\n\
@@ -98,7 +98,7 @@ struct merit merits[] = {
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Common,     Moros,      Subtle  },
-    { "Fate",   0,      Common,     Acanthus,   Subtle  },
+    { "Fate",   0,      Ruling,     Acanthus,   Subtle  },
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
@@ -106,7 +106,7 @@ struct arcanum_t arcana[n_arcana] = {
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
-    { "Time",   0,      Common,     Acanthus,   Gross   }
+    { "Time",   0,      Ruling,     Acanthus,   Gross   }
 };
 
 struct rote_t rotes[] = {
