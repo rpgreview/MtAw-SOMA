@@ -25,7 +25,7 @@ struct character_overview overview = {
     /* Vice        */ "Alcoholic",
     /* Concept     */ "Old-fashioned Cop",
     /* Chronicle   */ "SOMA",
-    /* Path        */ NULL,
+    /* Path        */ "Obrimos",
     /* Order       */ NULL,
     /* Quote       */ "Put on the cuffs and I won’t have to hurt you.",
     /* Background  */ "Rachel comes from a cop family. Her father, Joe, was a good Irish Catholic boy, the favorite son. At least, he was until he married a Jewish girl named Irene. His brothers mocked him for it, but his dad just said, “at least she’s not a Protestant.” Irene’s family threatened to disown her for marrying a gentile. So Rachel grew up here, away from the bulk of the family in Boston, just because her dad was tired of getting grief from both sides of the family.\n\n\
@@ -99,11 +99,11 @@ struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Common,     Moros,      Subtle  },
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
-    { "Forces", 0,      Common,     Obrimos,    Gross   },
+    { "Forces", 0,      Ruling,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
-    { "Prime",  0,      Common,     Obrimos,    Subtle  },
+    { "Prime",  0,      Ruling,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
     { "Time",   0,      Common,     Acanthus,   Gross   }
