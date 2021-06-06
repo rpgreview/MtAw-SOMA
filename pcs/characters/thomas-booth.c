@@ -99,8 +99,8 @@ struct merit merits[] = {
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Common,     Moros,      Subtle  },
-    { "Fate",   0,      Ruling,     Acanthus,   Subtle  },
-    { "Forces", 0,      Common,     Obrimos,    Gross   },
+    { "Fate",   1,      Ruling,     Acanthus,   Subtle  },
+    { "Forces", 0,      Inferior,   Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
