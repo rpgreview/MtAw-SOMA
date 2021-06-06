@@ -39,6 +39,7 @@ Thomas moved into Hill Manor Apartments just over a year ago. He likes the place
 
 char *aspirations[] = {
     "Acquire an impressive item to hang in apartment.",
+    "Get Natasha accepted by my posh New England parents.",
     "Meet someone with connection to Salem witch trials, preferably someone who was actually there ;)",
     NULL
 };

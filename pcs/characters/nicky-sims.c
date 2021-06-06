@@ -43,7 +43,6 @@ As the pay got better, Nicky moved into Hill Manor Apartments. He pays his rent 
 };
 
 char *aspirations[] = {
-    "Rescue someone",
     "Put a bad guy in hospital",
     "Find out what's up with Anton's guns",
     NULL

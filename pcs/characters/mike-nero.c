@@ -39,7 +39,6 @@ But the pills take the edge off that.",
 };
 
 char *aspirations[] = {
-    "Save someone's life",
     NULL
 };
 
