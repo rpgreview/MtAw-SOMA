@@ -92,6 +92,7 @@ struct merit merits[] = {
     { "Contacts (Academics, Sports Journalists)",   2 }, // Due to Prof Training
     { "Library",                                    1 },
     { "Trained Observer",                           1 },
+    { "Fame",                                       1 }, // Some combination of college sports, Salem witch ancestor, and being filmed at the Askuanebi event.
     { NULL,                                         0 }
 };
 
@@ -140,4 +141,7 @@ void advancement() {
     gnosis = 1;
     wisdom = integrity;
     integrity = 0;
+
+    // Purchase Fame Merit
+    ++mundane_xp_spent;
 }
