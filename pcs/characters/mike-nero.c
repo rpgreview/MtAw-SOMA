@@ -25,7 +25,7 @@ struct character_overview overview = {
     /* Vice        */ "Painkiller Addiction",
     /* Concept     */ "Strung Out Paramedic",
     /* Chronicle   */ "SOMA",
-    /* Path        */ NULL,
+    /* Path        */ "Moros",
     /* Order       */ NULL,
     /* Quote       */ "Apply pressure.",
     /* Background  */ "Michael’s a hard worker. He always has been. When he was young, Michael spent his summers helping his grandfather renovate the family’s vacation house. It was his escape from the harsh city and its dangers. He was convinced that everyone in his family was going to get mugged or hit by a drunk driver or any number of other morbid nightmares he had about the city’s horrors. But it was different here. Calm, soothing. He rehung walls with his grandfather, installed new windows and even helped out with the roofing. It was nice to do things with his hands, to see the immediate difference from his work.\n\n\
@@ -99,11 +99,11 @@ struct merit merits[] = {
 
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
-    { "Death",  0,      Common,     Moros,      Subtle  },
+    { "Death",  0,      Ruling,     Moros,      Subtle  },
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
-    { "Matter", 0,      Common,     Moros,      Gross   },
+    { "Matter", 0,      Ruling,     Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
