@@ -43,7 +43,6 @@ char *aspirations[] = {
 };
 
 char *obsessions[] = {
-    "Askuanebi",
     NULL
 };
 
