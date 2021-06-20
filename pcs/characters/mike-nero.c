@@ -141,8 +141,7 @@ void advancement() {
     // Where to note experience expenditures
 
     // Unlock Brawl
-    ++mundane_xp_spent;
-    ++mundane_xp_spent;
+    mundane_xp_spent += 2;
 
     // Get a generous inheritance: Resources += 3
     mundane_xp_spent += 3;
