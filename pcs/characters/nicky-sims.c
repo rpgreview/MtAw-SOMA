@@ -50,7 +50,6 @@ char *aspirations[] = {
 };
 
 char *obsessions[] = {
-    "The soviet space program: a metaphysical perspective",
     NULL
 };
 
@@ -101,6 +100,7 @@ struct merit merits[] = {
     { "Professional Training (Criminal)",               1 },
     { "Contacts (Black Market, Security/Locksmiths)",   2 }, // Due to prof training
     { "Order Status (Adamantine Arrow)",                2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
+    { "Grimoire (Mental Shield, Isolation)",            1 }, // From Books for Crooks
     { NULL,                                             0 }
 };
 
