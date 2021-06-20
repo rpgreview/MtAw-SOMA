@@ -39,10 +39,14 @@ But the pills take the edge off that.",
 };
 
 char *aspirations[] = {
+    "Save a life",
+    "Find a magic book or teacher",
+    "Buy the Hill Manor penthouse",
     NULL
 };
 
 char *obsessions[] = {
+    "The mysterious villa which serves as lodge for the New England Wizards (NEW)",
     NULL
 };
 
