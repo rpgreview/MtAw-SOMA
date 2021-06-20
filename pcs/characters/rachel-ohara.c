@@ -88,13 +88,13 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 };
 
 struct merit merits[] = {
-    { "Prof Training (Police)",     2 },
-    { "Status (Police)",            2 },
-    { "Police Tactics",             3 },
-    { "Contacts (Lawyers, Gangs)",  2 }, // Due to Prof Training
-    { "Serpentine",                 2 },
-    { "Order Status (Silver Ladder)",2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
-    { NULL,                         0 }
+    { "Prof Training (Police)",         2 },
+    { "Status (Police)",                2 },
+    { "Police Tactics",                 3 },
+    { "Contacts (Lawyers, Gangs)",      2 }, // Due to Prof Training
+    { "Serpentine",                     2 },
+    { "Order Status (Silver Ladder)",   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
+    { NULL,                             0 }
 };
 
 struct arcanum_t arcana[n_arcana] = {
