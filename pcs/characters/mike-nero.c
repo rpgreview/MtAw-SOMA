@@ -98,6 +98,7 @@ struct merit merits[] = {
     { "Contacts (Doctors, Cops)",   2 }, // Due to Prof Training
     { "Library",                    1 },
     { "Order Status (Mysterium)",   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
+    { "Safe Place (Hill Manor Penthouse)",  3 }, // Purchased with Resources.
     { NULL,                         0 },
 };
 
