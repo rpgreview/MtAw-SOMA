@@ -67,7 +67,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Mental,       "Computer",         NULL,           1,      false,   false,   false  },
         { Mental,       "Crafts",           NULL,           1,      false,   false,   false  },
         { Mental,       "Investigation",    "Casing",       2,      false,   false,   false  },
-        { Mental,       "Medicine",         NULL,           0,      false,   false,   false  },
+        { Mental,       "Medicine",         NULL,           1,      false,   false,   false  },
         { Mental,       "Occult",           NULL,           0,      false,   false,   false  },
         { Mental,       "Politics",         NULL,           0,      false,   false,   false  },
         { Mental,       "Science",          NULL,           0,      false,   false,   false  } },
@@ -151,4 +151,7 @@ void advancement() {
     gnosis = 1;
     wisdom = integrity;
     integrity = 0;
+
+    // Acquire dot of Medicine
+    ++mundane_xp_spent;
 }

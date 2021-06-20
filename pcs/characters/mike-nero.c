@@ -101,11 +101,11 @@ struct merit merits[] = {
 
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
-    { "Death",  1,      Ruling,     Moros,      Subtle  },
+    { "Death",  2,      Ruling,     Moros,      Subtle  },
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
-    { "Matter", 2,      Ruling,     Moros,      Gross   },
+    { "Matter", 3,      Ruling,     Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
@@ -150,4 +150,7 @@ void advancement() {
     gnosis = 1;
     wisdom = integrity;
     integrity = 0;
+
+    // Acquire an extra dot in each of Death and Matter
+    arcane_xp_spent += 2;
 }

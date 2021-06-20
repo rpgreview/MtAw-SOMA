@@ -70,7 +70,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
     {   { Physical,     "Athletics",        NULL,           3,      false,   false,   false  },
         { Physical,     "Brawl",            NULL,           2,      false,   false,   false  },
         { Physical,     "Drive",            NULL,           1,      false,   false,   false  },
-        { Physical,     "Firearms",         NULL,           3,      false,   true,    false  },
+        { Physical,     "Firearms",         NULL,           4,      false,   true,    false  },
         { Physical,     "Larceny",          NULL,           1,      false,   false,   false  },
         { Physical,     "Stealth",          NULL,           0,      false,   false,   false  },
         { Physical,     "Survival",         NULL,           0,      false,   false,   false  },
@@ -78,12 +78,12 @@ struct skill_t skills[n_categories][n_mental_skills] = {
     // Social
     {   { Social,       "Animal Ken",       NULL,           0,      false,   false,   false  },
         { Social,       "Empathy",          NULL,           1,      false,   false,   false  },
-        { Social,       "Expression",       NULL,           0,      false,   false,   false  },
+        { Social,       "Expression",       NULL,           1,      false,   false,   false  },
         { Social,       "Intimidation",     NULL,           2,      false,   false,   false  },
-        { Social,       "Persuasion",       NULL,           0,      false,   false,   false  },
+        { Social,       "Persuasion",       NULL,           1,      false,   false,   false  },
         { Social,       "Socialize",        NULL,           0,      false,   false,   false  },
         { Social,       "Streetwise",       NULL,           1,      false,   true,    false  },
-        { Social,       "Subterfuge",       NULL,           0,      false,   false,   false  } }
+        { Social,       "Subterfuge",       NULL,           1,      false,   false,   false  } }
 };
 
 struct merit merits[] = {
@@ -91,7 +91,7 @@ struct merit merits[] = {
     { "Status (Police)",            2 },
     { "Police Tactics",             3 },
     { "Contacts (Lawyers, Gangs)",  2 }, // Due to Prof Training
-    { "Serpentine",                 1 },
+    { "Serpentine",                 2 },
     { NULL,                         0 }
 };
 
@@ -99,11 +99,11 @@ struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Inferior,   Moros,      Subtle  },
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
-    { "Forces", 2,      Ruling,     Obrimos,    Gross   },
+    { "Forces", 3,      Ruling,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Inferior,   Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
-    { "Prime",  2,      Ruling,     Obrimos,    Subtle  },
+    { "Prime",  3,      Ruling,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
     { "Time",   0,      Common,     Acanthus,   Gross   }
@@ -145,4 +145,13 @@ void advancement() {
     gnosis = 1;
     wisdom = integrity;
     integrity = 0;
+
+    // Acquire Order Rote skills
+    mundane_xp_spent += 3;
+
+    // Acquire an extra dot in each of Forces and Prime
+    arcane_xp_spent += 2;
+
+    // Run and gun: gain an extra dot in Serpentine and Firearms
+    mundane_xp_spent += 2;
 }

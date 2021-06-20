@@ -74,7 +74,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Physical,     "Firearms",         NULL,           0,      false,   false,   false  },
         { Physical,     "Larceny",          NULL,           0,      false,   false,   false  },
         { Physical,     "Stealth",          NULL,           0,      false,   false,   false  },
-        { Physical,     "Survival",         NULL,           0,      false,   false,   false  },
+        { Physical,     "Survival",         NULL,           1,      false,   false,   false  },
         { Physical,     "Weaponry",         NULL,           0,      false,   false,   false  } },
     // Social
     {   { Social,       "Animal Ken",       NULL,           0,      false,   false,   false  },
@@ -94,6 +94,7 @@ struct merit merits[] = {
     { "Library",                                    1 },
     { "Trained Observer",                           1 },
     { "Fame",                                       1 }, // Some combination of college sports, Salem witch ancestor, and being filmed at the Askuanebi event.
+    { "Inheritance (Descended from Salem Witch)",   2 },
     { NULL,                                         0 }
 };
 
@@ -142,6 +143,9 @@ void advancement() {
     wisdom = integrity;
     integrity = 0;
 
-    // Purchase Fame Merit
-    ++mundane_xp_spent;
+    // Purchase Fame and Inheritance Merits
+    mundane_xp_spent += 3;
+
+    // Learn Survival
+    mundane_xp_spent += 1;
 }
