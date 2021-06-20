@@ -1,7 +1,7 @@
 #pragma once
 
 #define PLAYER_NAME "Jay"
-#define MUNDANE_BEATS   3
-#define MUNDANE_XP      6
-#define ARCANE_BEATS    2
+#define MUNDANE_BEATS   4
+#define MUNDANE_XP      7
+#define ARCANE_BEATS    3
 #define ARCANE_XP       3
