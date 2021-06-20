@@ -18,7 +18,7 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name        */ "Nishan \"Nicky Sims\" Sadoyan",
+    /* Name        */ "Nishan \"Nicky Sims\" Sadoyan (Shadow Name: Prince Alexander Mirza)",
     /* Age         */ "",
     /* Player      */ PLAYER_NAME,
     /* Virtue      */ "Fortitude. Nicky has a somewhat stoic, “it is what it is” mentality about hardship.",
@@ -109,9 +109,9 @@ struct arcanum_t arcana[n_arcana] = {
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
-    { "Mind",   0,      Ruling,     Mastigos,   Subtle  },
+    { "Mind",   1,      Ruling,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
-    { "Space",  1,      Ruling,     Mastigos,   Gross   },
+    { "Space",  2,      Ruling,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
     { "Time",   0,      Common,     Acanthus,   Gross   }
 };
@@ -122,6 +122,7 @@ struct rote_t rotes[] = {
 };
 
 char *praxes[] = {
+    "Break Boundary",
     NULL
 };
 

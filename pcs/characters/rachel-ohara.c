@@ -18,7 +18,7 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name        */ "Rachel O'Hara",
+    /* Name        */ "Rachel O'Hara (Shadow Name: Sphinx)",
     /* Age         */ "",
     /* Player      */ PLAYER_NAME,
     /* Virtue      */ "Justice. Rachel feels fulfilled when things go right and justice is served.",
@@ -99,11 +99,11 @@ struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Inferior,   Moros,      Subtle  },
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
-    { "Forces", 1,      Ruling,     Obrimos,    Gross   },
+    { "Forces", 2,      Ruling,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
-    { "Matter", 0,      Common,     Moros,      Gross   },
+    { "Matter", 0,      Inferior,   Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
-    { "Prime",  0,      Ruling,     Obrimos,    Subtle  },
+    { "Prime",  2,      Ruling,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
     { "Time",   0,      Common,     Acanthus,   Gross   }
@@ -115,6 +115,7 @@ struct rote_t rotes[] = {
 };
 
 char *praxes[] = {
+    "Control Fire",
     NULL
 };
 

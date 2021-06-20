@@ -18,7 +18,7 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name        */ "Michael Nero",
+    /* Name        */ "Michael Nero (Shadow Name: Marcus Aurelius)",
     /* Age         */ "",
     /* Player      */ PLAYER_NAME,
     /* Virtue      */ "Faith: Michael has faith that in preserving life, he gives meaning to his own.",
@@ -101,11 +101,11 @@ struct merit merits[] = {
 
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
-    { "Death",  0,      Ruling,     Moros,      Subtle  },
+    { "Death",  1,      Ruling,     Moros,      Subtle  },
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
-    { "Matter", 0,      Ruling,     Moros,      Gross   },
+    { "Matter", 2,      Ruling,     Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
@@ -119,6 +119,7 @@ struct rote_t rotes[] = {
 };
 
 char *praxes[] = {
+    "Remote Control",
     NULL
 };
 

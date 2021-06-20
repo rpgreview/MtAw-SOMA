@@ -18,7 +18,7 @@ int mundane_xp = MUNDANE_XP;
 int arcane_xp  = ARCANE_XP;
 
 struct character_overview overview = {
-    /* Name        */ "Thomas Booth",
+    /* Name        */ "Thomas Booth (Shadow Name: Moripilude)",
     /* Age         */ "",
     /* Player      */ PLAYER_NAME,
     /* Virtue      */ "Charity. Thomas can't resist helping those in need.",
@@ -117,6 +117,7 @@ struct rote_t rotes[] = {
 };
 
 char *praxes[] = {
+    "Perfect Timing",
     NULL
 };
 
