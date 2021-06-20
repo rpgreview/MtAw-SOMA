@@ -105,7 +105,7 @@ struct arcanum_t arcana[n_arcana] = {
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
-    { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
+    { "Spirit", 0,      Inferior,   Thyrsus,    Subtle  },
     { "Time",   0,      Common,     Acanthus,   Gross   }
 };
 
