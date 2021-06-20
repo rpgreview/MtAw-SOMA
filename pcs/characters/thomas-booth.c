@@ -129,8 +129,6 @@ struct weapon_t weapons[] = {
 };
 
 void advancement() {
-    // Where to note experience expenditures
-
     // Purchase the Trained Observer Merit
     ++mundane_xp_spent;
 

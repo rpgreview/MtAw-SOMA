@@ -138,8 +138,6 @@ struct weapon_t weapons[] = {
 };
 
 void advancement() {
-    // Where to note experience expenditures
-
     // Unlock Brawl
     mundane_xp_spent += 2;
 

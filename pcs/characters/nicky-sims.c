@@ -139,8 +139,6 @@ struct weapon_t weapons[] = {
 };
 
 void advancement() {
-    // Where to note experience expenditures
-
     // Buy a point of Prof Training (Criminal)
     ++mundane_xp_spent;
 
