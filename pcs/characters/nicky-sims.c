@@ -26,7 +26,7 @@ struct character_overview overview = {
     /* Concept     */ "Small Time Hood",
     /* Chronicle   */ "SOMA",
     /* Path        */ "Mastigos",
-    /* Order       */ NULL,
+    /* Order       */ "Adamantine Arrow",
     /* Quote       */ "I do what I gotta do.",
     /* Background  */ "Nishan grew up a nomad. His father kept him moving, from one score to the next, across the rapidly changing landscape of the former Soviet Union. He sat in the back of a Lada Niva playing with toys while his father brokered drug deals in Gori. As a teen, he kept a lookout for Russian authorities while his father broke into a house in Moscow. When they came, he ran.\n\n\
 For a while, he bounced around the region on his own, stealing food to get by, squatting in abandoned factories and half-finished “luxury” apartment buildings. Eventually he fell into a smuggling operation and ended up on a ship bound for Canada. From there, he snuck across the border into the United States, and eventually wound up here.\n\n\
@@ -38,7 +38,8 @@ Nicky started doing odd jobs for Anton. Nothing big, at first. Acting as a black
 He started to get used to that, too.\n\n\
 As the pay got better, Nicky moved into Hill Manor Apartments. He pays his rent on time, and keeps anything related to work at the convenience store in a lockbox hidden in the back of the freezer. Home is supposed to be quiet, a safe haven away from the inevitable demands Anton makes on him. He wasn’t there a week before Janice started coming around, inviting him to poker games and socials. She’s a nice person, and her poker game is actually kind of fun, when he can make it.",
     /* Description */ "Nicky is a thickly built, hirsute man who stands a few inches under six feet tall. He has a perpetual five o’clock shadow even just after shaving. He looks older than he is—the life of a vagabond stray took its toll before he found his way to Hill Manor Apartments.",
-    /* RP Hints    */ "You do your best to fit in. Nicky doesn’t want to be remembered as “that foreign guy.” Despite your Armenian accent, you try hard to be seen as American. Part of this is an attempt to forget your past and make a new life here in the United States, but another part of it is camouflage. You know Rachel is a cop, and the last thing you want is for her to find out about your extra-curricular activities. You don’t actually want to be a criminal, but you will always do what’s necessary to survive, and crime is where your skills lie.",
+    /* RP Hints    */ "You do your best to fit in. Nicky doesn’t want to be remembered as “that foreign guy.” Despite your Armenian accent, you try hard to be seen as American. Part of this is an attempt to forget your past and make a new life here in the United States, but another part of it is camouflage. You know Rachel is a cop, and the last thing you want is for her to find out about your extra-curricular activities. You don’t actually want to be a criminal, but you will always do what’s necessary to survive, and crime is where your skills lie.\n\n\
+Nicky has vowed to protect the secrets of the Adamantine Arrow, uphold the Order's tenets, and honour its rulings.",
     /* Is NPC?     */ false
 };
 
@@ -99,6 +100,7 @@ struct merit merits[] = {
     { "Library",                                        1 },
     { "Professional Training (Criminal)",               1 },
     { "Contacts (Black Market, Security/Locksmiths)",   2 }, // Due to prof training
+    { "Order Status (Adamantine Arrow)",                2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
     { NULL,                                             0 }
 };
 

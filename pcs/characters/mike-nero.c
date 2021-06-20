@@ -26,7 +26,7 @@ struct character_overview overview = {
     /* Concept     */ "Strung Out Paramedic",
     /* Chronicle   */ "SOMA",
     /* Path        */ "Moros",
-    /* Order       */ NULL,
+    /* Order       */ "Mysterium",
     /* Quote       */ "Apply pressure.",
     /* Background  */ "Michael’s a hard worker. He always has been. When he was young, Michael spent his summers helping his grandfather renovate the family’s vacation house. It was his escape from the harsh city and its dangers. He was convinced that everyone in his family was going to get mugged or hit by a drunk driver or any number of other morbid nightmares he had about the city’s horrors. But it was different here. Calm, soothing. He rehung walls with his grandfather, installed new windows and even helped out with the roofing. It was nice to do things with his hands, to see the immediate difference from his work.\n\n\
 One day, while he was on the roof, he saw his grandfather fall in the yard. He whispered to the boy that it felt like a demon was sitting on his chest. By the time the paramedics arrived, Michael’s grandfather was dead. They tried for twenty minutes to resuscitate him, but there was nothing they could do.\n\n\
@@ -34,7 +34,8 @@ Michael never went out to the vacation house again. The family sold it a few sum
 To Michael, death is meaningless violence, fear and indignity. Life has meaning, and must be preserved, if only to stave off the entropy of death. He started riding the night streets with his partner, and soon he discovered that he doesn’t actually have the resources to deal with the constant loss of patients.\n\n\
 But the pills take the edge off that.",
     /* Description */ "Michael has a gaunt look to him, like he doesn’t get nearly enough sleep. His uncombed hair is wild and thick. Three days of stubble is scattered across his cheeks and chin, and the worst part is, it works for him. He’s more attractive when everything’s just slightly askew than he is when he cleans up. Which is basically how he likes it.",
-    /* RP Hints    */ "You look like you don’t get enough sleep because you seriously don’t get enough sleep. Between the wonky hours of driving an ambulance and the dreams, you have severe insomnia most of the time. You’re tempted to blow off the ghost thing as hallucinations, whether from the drugs or the sleep deprivation, you don’t know.",
+    /* RP Hints    */ "You look like you don’t get enough sleep because you seriously don’t get enough sleep. Between the wonky hours of driving an ambulance and the dreams, you have severe insomnia most of the time. You’re tempted to blow off the ghost thing as hallucinations, whether from the drugs or the sleep deprivation, you don’t know.\n\n\
+Michael has vowed to protect the secrets of the Mysterium, uphold the Order's tenets, and honour its rulings.",
     /* Is NPC?     */ false
 };
 
@@ -96,6 +97,7 @@ struct merit merits[] = {
     { "Prof Training (Paramedic)",  2 },
     { "Contacts (Doctors, Cops)",   2 }, // Due to Prof Training
     { "Library",                    1 },
+    { "Order Status (Mysterium)",   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
     { NULL,                         0 },
 };
 
