@@ -111,7 +111,7 @@ struct arcanum_t arcana[n_arcana] = {
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
-    { "Time",   0,      Ruling,     Acanthus,   Gross   }
+    { "Time",   2,      Ruling,     Acanthus,   Gross   }
 };
 
 struct rote_t rotes[] = {
