@@ -57,34 +57,34 @@ int attributes[n_attribute_types][n_categories] = {
 };
 
 struct skill_t skills[n_categories][n_mental_skills] = {
-        /*{ Category,   Name,               Specialization, Dots,   Unlock,  Asset,   Order Rote Skill  } */
+    /*  { Category,     Name,               Specialization, Dots,   Modifiers  } */
     // Mental
-    {   { Mental,       "Academics",        "Law",          1,      false,   false,   false  },
-        { Mental,       "Computer",         NULL,           1,      false,   false,   false  },
-        { Mental,       "Crafts",           NULL,           0,      false,   false,   false  },
-        { Mental,       "Investigation",    "Crime Scenes", 4,      false,   false,   false  },
-        { Mental,       "Medicine",         NULL,           0,      false,   false,   false  },
-        { Mental,       "Occult",           NULL,           0,      false,   false,   false  },
-        { Mental,       "Politics",         NULL,           1,      false,   false,   false  },
-        { Mental,       "Science",          NULL,           0,      false,   false,   false  } },
+    {   { Mental,       "Academics",        "Law",          1,      0  },
+        { Mental,       "Computer",         NULL,           1,      0  },
+        { Mental,       "Crafts",           NULL,           0,      0  },
+        { Mental,       "Investigation",    "Crime Scenes", 4,      0  },
+        { Mental,       "Medicine",         NULL,           0,      0  },
+        { Mental,       "Occult",           NULL,           0,      0  },
+        { Mental,       "Politics",         NULL,           1,      0  },
+        { Mental,       "Science",          NULL,           0,      0  } },
     // Physical
-    {   { Physical,     "Athletics",        NULL,           3,      false,   false,   false  },
-        { Physical,     "Brawl",            NULL,           2,      false,   false,   false  },
-        { Physical,     "Drive",            NULL,           1,      false,   false,   false  },
-        { Physical,     "Firearms",         NULL,           4,      false,   true,    false  },
-        { Physical,     "Larceny",          NULL,           1,      false,   false,   false  },
-        { Physical,     "Stealth",          NULL,           0,      false,   false,   false  },
-        { Physical,     "Survival",         NULL,           0,      false,   false,   false  },
-        { Physical,     "Weaponry",         "Clubs",        1,      false,   false,   false  } },
+    {   { Physical,     "Athletics",        NULL,           3,      0  },
+        { Physical,     "Brawl",            NULL,           2,      0  },
+        { Physical,     "Drive",            NULL,           1,      0  },
+        { Physical,     "Firearms",         NULL,           4,      IS_ASSET  },
+        { Physical,     "Larceny",          NULL,           1,      0  },
+        { Physical,     "Stealth",          NULL,           0,      0  },
+        { Physical,     "Survival",         NULL,           0,      0  },
+        { Physical,     "Weaponry",         "Clubs",        1,      0  } },
     // Social
-    {   { Social,       "Animal Ken",       NULL,           0,      false,   false,   false  },
-        { Social,       "Empathy",          NULL,           1,      false,   false,   false  },
-        { Social,       "Expression",       NULL,           1,      false,   false,   false  },
-        { Social,       "Intimidation",     NULL,           2,      false,   false,   false  },
-        { Social,       "Persuasion",       NULL,           1,      false,   false,   false  },
-        { Social,       "Socialize",        NULL,           0,      false,   false,   false  },
-        { Social,       "Streetwise",       NULL,           1,      false,   true,    false  },
-        { Social,       "Subterfuge",       NULL,           1,      false,   false,   false  } }
+    {   { Social,       "Animal Ken",       NULL,           0,      0  },
+        { Social,       "Empathy",          NULL,           1,      0  },
+        { Social,       "Expression",       NULL,           1,      0  },
+        { Social,       "Intimidation",     NULL,           2,      0  },
+        { Social,       "Persuasion",       NULL,           1,      0  },
+        { Social,       "Socialize",        NULL,           0,      0  },
+        { Social,       "Streetwise",       NULL,           1,      IS_ASSET  },
+        { Social,       "Subterfuge",       NULL,           1,      0  } }
 };
 
 struct merit merits[] = {

@@ -8,7 +8,11 @@ void print_skills() {
     int max_skill_name_len[n_categories] = { 0, 0, 0 };
     for(int c = 0; c < n_categories; ++c) {
         for(int s = 0; s < n_mental_skills; ++s) {
-            int tag_len = skills[c][s].is_unlocked + skills[c][s].is_asset + skills[c][s].is_order_rote_skill;
+            //int tag_len = skills[c][s].is_unlocked + skills[c][s].is_asset + skills[c][s].is_order_rote_skill;
+            int tag_len = 0;
+            for(int shift = 0; shift < 5; ++shift) {
+                tag_len += 1 & (skills[c][s].modifiers >> shift);
+            }
             if(tag_len > 0) {
                 // We'll add a space
                 ++tag_len;
@@ -27,25 +31,39 @@ void print_skills() {
     char dot_str[10];
     bool unlocked_found = false;
     bool assets_found = false;
+    bool area_of_expertise_found = false;
+    bool interdisciplinary_specialty_found = false;
     bool rote_skills_found = false;
     char unlocked_sym = '?';
     char asset_sym = '+';
+    char area_of_expertise_sym = '@';
+    char interdisciplinary_specialty_sym = '^';
     char rote_sym = '*';
     for(int s = 0; s < n_mental_skills; ++s) {
         for(int c = 0; c < n_categories; ++c) {
             memset(buf, 0, 256);
             int start = 0;
-            if(skills[c][s].is_unlocked) {
+            if(skills[c][s].modifiers & IS_UNLOCKED) {
                 unlocked_found = true;
                 buf[start] = unlocked_sym;
                 ++start;
             }
-            if(skills[c][s].is_asset) {
+            if(skills[c][s].modifiers & IS_ASSET) {
                 assets_found = true;
                 buf[start] = asset_sym;
                 ++start;
             }
-            if(skills[c][s].is_order_rote_skill) {
+            if(skills[c][s].modifiers & IS_AREA_OF_EXPERTISE) {
+                area_of_expertise_found = true;
+                buf[start] = area_of_expertise_sym;
+                ++start;
+            }
+            if(skills[c][s].modifiers & IS_INTERDISCIPLINARY_SPECIALTY) {
+                interdisciplinary_specialty_found = true;
+                buf[start] = interdisciplinary_specialty_sym;
+                ++start;
+            }
+            if(skills[c][s].modifiers & IS_ORDER_ROTE_SKILL) {
                 rote_skills_found = true;
                 buf[start] = rote_sym;
                 ++start;
@@ -78,6 +96,12 @@ void print_skills() {
     }
     if(assets_found) {
         printf("%c Professional Training Asset Skills\n", asset_sym);
+    }
+    if(area_of_expertise_found) {
+        printf("%c Area of Expertise\n", area_of_expertise_sym);
+    }
+    if(interdisciplinary_specialty_found) {
+        printf("%c Interdisciplinary Specialty\n", interdisciplinary_specialty_sym);
     }
     if(rote_skills_found) {
         printf("%c Order Rote Skills\n", rote_sym);

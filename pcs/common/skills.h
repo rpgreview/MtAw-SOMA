@@ -2,6 +2,12 @@
 #include <stdbool.h>
 #include "common/utils.h"
 
+#define IS_UNLOCKED                      1
+#define IS_ASSET                         2
+#define IS_AREA_OF_EXPERTISE             4
+#define IS_INTERDISCIPLINARY_SPECIALTY   8
+#define IS_ORDER_ROTE_SKILL             16
+
 enum mental_skills {
     Academics,
     Computer,
@@ -43,9 +49,7 @@ struct skill_t {
     char *name;
     char *specialization;
     int  dots;
-    bool is_unlocked; // House rule: spend 1XP on a skill to remove the untrained penalty
-    bool is_asset;
-    bool is_order_rote_skill;
+    unsigned short int modifiers;
 };
 
 extern struct skill_t skills[n_categories][n_mental_skills];
