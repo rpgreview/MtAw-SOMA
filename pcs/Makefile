@@ -1,16 +1,12 @@
-.PHONY: all clean
+.PHONY: all characters npcs clean
 
-PCS=$(basename $(notdir $(wildcard characters/*.c)))
-NPCS=$(basename $(notdir $(wildcard npcs/*.c)))
-$(info PCS is $(PCS))
+all: characters npcs
 
-all: $(PCS) $(NPCS)
+characters npcs: lib/libmtaw.so
+	$(MAKE) -C $@
 
-$(PCS):
-	gcc -o bin/$@ -I./ common/*.c characters/$@.c
-
-$(NPCS):
-	gcc -o bin/$@ -I./ common/*.c npcs/$@.c
+lib/libmtaw.so:
+	gcc -o lib/libmtaw.so --shared -fPIC -I./ common/*.c
 
 clean:
-	rm -vf bin/$(PCS) bin/$(NPCS)
+	$(RM) -v bin/* lib/libmtaw.so
