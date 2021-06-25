@@ -1,8 +1,8 @@
-.PHONY: all characters npcs clean
+.PHONY: all pcs npcs clean
 
-all: characters npcs
+all: pcs npcs
 
-characters npcs: lib/libmtaw.so
+pcs npcs: lib/libmtaw.so
 	$(MAKE) -C $@
 
 lib/libmtaw.so:

@@ -1,3 +1,4 @@
 .vimrc
-pcs/bin
+characters/bin
+characters/lib
 wiki
