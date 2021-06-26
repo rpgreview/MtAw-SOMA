@@ -1,6 +1,6 @@
 #pragma once
 #include <stdbool.h>
-#include "common/skills.h"
+#include <mtaw/skills.h>
 
 enum paths {
     Acanthus,

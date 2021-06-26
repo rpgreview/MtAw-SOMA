@@ -4,14 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "common/utils.h"
-#include "common/overview.h"
-#include "common/attributes.h"
-#include "common/skills.h"
-#include "common/merits.h"
-#include "common/inventory.h"
-#include "common/magic.h"
-#include "players/lev.h"
+#include <mtaw/mtaw.h>
+#include <players/lev.h>
 
 // Need to grab player XP here since it's the only non-shared source file.
 int mundane_xp = MUNDANE_XP;

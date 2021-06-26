@@ -2,7 +2,7 @@
 
 PCS=$(basename $(notdir $(wildcard *.c)))
 
-CFLAGS = -I../
+CFLAGS = -I../include
 CPPFLAGS = -L../lib -lmtaw
 
 all: $(PCS)

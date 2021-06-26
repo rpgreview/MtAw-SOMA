@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "common/inventory.h"
+#include <mtaw/mtaw.h>
 
 void print_mundane_equipment() {
     printf("```\n");

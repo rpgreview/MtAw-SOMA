@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "common/utils.h"
-#include "common/attributes.h"
-#include "common/skills.h"
-#include "common/magic.h"
+#include <mtaw/mtaw.h>
 
 int size = 5;
 int integrity = 7;

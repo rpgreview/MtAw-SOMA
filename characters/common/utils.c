@@ -2,13 +2,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
-#include "common/utils.h"
-#include "common/overview.h"
-#include "common/attributes.h"
-#include "common/skills.h"
-#include "common/merits.h"
-#include "common/inventory.h"
-#include "common/magic.h"
+#include <mtaw/mtaw.h>
 
 char *dots(int ndots, int max_dots) {
     const char *dot = "\xE2\x97\x8F";

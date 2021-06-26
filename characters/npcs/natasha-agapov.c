@@ -1,15 +1,8 @@
-// Just a test character for baselining various functions
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "common/utils.h"
-#include "common/overview.h"
-#include "common/attributes.h"
-#include "common/skills.h"
-#include "common/merits.h"
-#include "common/inventory.h"
-#include "common/magic.h"
-#include "players/michael.h"
+#include <mtaw/mtaw.h>
+#include <players/michael.h>
 
 int mundane_xp = 0;
 int arcane_xp  = 0;

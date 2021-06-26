@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
-#include "common/skills.h"
+#include <mtaw/mtaw.h>
 
 void print_skills() {
     int max_skill_name_len[n_categories] = { 0, 0, 0 };

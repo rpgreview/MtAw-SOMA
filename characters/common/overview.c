@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
-#include "common/overview.h"
-#include "common/magic.h"
+#include <mtaw/mtaw.h>
 
 int mundane_xp_spent = 0;
 

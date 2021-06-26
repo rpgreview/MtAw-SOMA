@@ -2,10 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-#include "common/attributes.h"
-#include "common/skills.h"
-#include "common/magic.h"
-#include "common/merits.h"
+#include <mtaw/mtaw.h>
 
 int arcane_xp_spent = 0;
 bool awakened = false;

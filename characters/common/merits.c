@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "common/utils.h"
-#include "common/merits.h"
+#include <mtaw/mtaw.h>
 
 void print_merits() {
     int max_merits_name_len = 0;

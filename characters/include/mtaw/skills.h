@@ -1,6 +1,6 @@
 #pragma once
 #include <stdbool.h>
-#include "common/utils.h"
+#include <mtaw/utils.h>
 
 #define IS_UNLOCKED                      1
 #define IS_ASSET                         2

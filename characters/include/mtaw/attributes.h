@@ -1,5 +1,5 @@
 #pragma once
-#include "common/utils.h"
+#include <mtaw/utils.h>
 
 enum attribute_type {
     Power,
