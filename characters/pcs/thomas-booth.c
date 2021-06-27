@@ -143,5 +143,5 @@ void advancement() {
     mundane_xp_spent += 3;
 
     // Learn Survival
-    mundane_xp_spent += 1;
+    mundane_xp_spent += 2;
 }

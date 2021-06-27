@@ -149,5 +149,5 @@ void advancement() {
     integrity = 0;
 
     // Acquire dot of Medicine
-    ++mundane_xp_spent;
+    mundane_xp_spent += 2;
 }

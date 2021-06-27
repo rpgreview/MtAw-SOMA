@@ -73,12 +73,12 @@ struct skill_t skills[n_categories][n_mental_skills] = {
     // Social
     {   { Social,       "Animal Ken",       NULL,           0,      0  },
         { Social,       "Empathy",          NULL,           1,      0  },
-        { Social,       "Expression",       NULL,           1,      0  },
+        { Social,       "Expression",       NULL,           0,      0  },
         { Social,       "Intimidation",     NULL,           2,      0  },
-        { Social,       "Persuasion",       NULL,           1,      0  },
+        { Social,       "Persuasion",       NULL,           0,      0  },
         { Social,       "Socialize",        NULL,           0,      0  },
         { Social,       "Streetwise",       NULL,           1,      IS_ASSET  },
-        { Social,       "Subterfuge",       NULL,           1,      0  } }
+        { Social,       "Subterfuge",       NULL,           0,      0  } }
 };
 
 struct merit merits[] = {
@@ -87,7 +87,7 @@ struct merit merits[] = {
     { "Police Tactics",                 3 },
     { "Contacts (Lawyers, Gangs)",      2 }, // Due to Prof Training
     { "Serpentine",                     2 },
-    { "Order Status (Silver Ladder)",   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
+    { "Order Status (Silver Ladder)",   1 }, // Conditional on keeping vow
     { NULL,                             0 }
 };
 
@@ -142,12 +142,9 @@ void advancement() {
     wisdom = integrity;
     integrity = 0;
 
-    // Acquire Order Rote skills
-    mundane_xp_spent += 3;
-
     // Acquire an extra dot in each of Forces and Prime
     arcane_xp_spent += 2;
 
     // Run and gun: gain an extra dot in Serpentine and Firearms
-    mundane_xp_spent += 2;
+    mundane_xp_spent += 3;
 }
