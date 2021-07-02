@@ -25,6 +25,9 @@ struct character_overview overview = {
 };
 
 char *aspirations[] = {
+    "Write an exposé about corruption in Concord",
+    "Change someone's mood with a song",
+    "Recruit someone into the Guardians of the Veil",
     NULL
 };
 
@@ -77,7 +80,7 @@ struct merit merits[] = {
     { "Professional Training (Journalist)", 3 },
     { "Contacts (Academic, Journalist)",    2 }, // From prof training
     { "Order Status (GoV)",                 1 },
-    { "High Speech",                        1 },
+    { "High Speech",                        1 }, // Via Order training
     { "Occultation",                        2 },
     { "Alternate Identity",                 2 },
     { "Anonymity",                          1 },
