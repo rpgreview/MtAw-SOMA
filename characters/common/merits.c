@@ -3,6 +3,15 @@
 #include <string.h>
 #include <mtaw/mtaw.h>
 
+int trained_observer() {
+    for(int m = 0; merits[m].name != NULL; ++m) {
+        if(strncmp(merits[m].name, "Trained Observer", 32) == 0) {
+            return merits[m].dots;
+        }
+    }
+    return 0;
+}
+
 void print_merits() {
     int max_merits_name_len = 0;
     for(int m = 0; merits[m].name != NULL; ++m) {

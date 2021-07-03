@@ -149,7 +149,19 @@ void print_attributes() {
     }
 
     dot_str = dots(perception, max(10, perception));
-    printf(fmt, "Perception:", perception, dot_str);
+    switch(trained_observer()) {
+        case 0:
+            printf(fmt, "Perception:", perception, dot_str);
+            break;
+        case 1:
+            printf("%-12s %3d %s (9-again)\n", "Perception:", perception, dot_str);
+            break;
+        case 3:
+            printf("%-12s %3d %s (8-again)\n", "Perception:", perception, dot_str);
+            break;
+        default:
+            printf("%-12s %3d %s (Invalid Trained Observer amount)\n", "Perception:", perception, dot_str);
+    }
     free(dot_str);
 
     dot_str = dots(recovery, max(10, recovery));

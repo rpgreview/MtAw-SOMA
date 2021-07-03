@@ -7,4 +7,5 @@ struct merit {
 
 extern struct merit merits[];
 
+int trained_observer();
 void print_merits();
