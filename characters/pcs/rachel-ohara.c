@@ -150,4 +150,7 @@ void advancement() {
 
     // Acquire a point of subterfuge
     mundane_xp_spent += 2;
+
+    // Perform magic in front of sleepers, an Act of Hubris
+    --wisdom;
 }
