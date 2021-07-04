@@ -79,7 +79,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Social,       "Persuasion",       NULL,           0,      0  },
         { Social,       "Socialize",        NULL,           0,      0  },
         { Social,       "Streetwise",       NULL,           1,      IS_ASSET  },
-        { Social,       "Subterfuge",       NULL,           0,      0  } }
+        { Social,       "Subterfuge",       NULL,           1,      0  } }
 };
 
 struct merit merits[] = {
@@ -148,4 +148,7 @@ void advancement() {
 
     // Run and gun: gain an extra dot in Serpentine and Firearms
     mundane_xp_spent += 3;
+
+    // Acquire a point of subterfuge
+    mundane_xp_spent += 2;
 }
