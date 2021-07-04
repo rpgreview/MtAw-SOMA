@@ -18,6 +18,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ "Thyrsus",
     /* Order       */ "Guardians of the Veil",
+    /* Nimbus      */ "Petrichor",
     /* Quote       */ NULL,
     /* Background  */ "Anita was an investigative journalist focused on bringing truth to power. But the more she learned, the more she realised that there is something deeper going on behind the scenes.\n\nWhile investigating illegal logging in Maine, she found herself lost in the deep forest. It was late autumn and as the first snows began to fall, she realised that she could soon die, alone in the cold. Although panicked at first, it dawned on her that she had never felt so invigorated. She could sense the unity of her spirit with the life in the surrounding wilderness, and a connection of her life force with hidden spirit entities peering at her from the shadows.\n\nChannelling this new wildness in her being, she not only survived but thrived, and returned to civilisation a changed person. Later, she found out that this experience is called Awakening, and she felt the calling to help awaken others to the same experience. Her investigative skills and interest in Awakening made her a natural fit for the Guardians of the Veil.",
     /* Description */ NULL,

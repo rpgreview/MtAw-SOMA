@@ -19,6 +19,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ NULL,
     /* Order       */ NULL,
+    /* Nimbus      */ NULL,
     /* Quote       */ NULL,
     /* Background  */ NULL,
     /* Description */ NULL,

@@ -21,6 +21,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ "Mastigos",
     /* Order       */ "Adamantine Arrow",
+    /* Nimbus      */ "Antiseptic smell",
     /* Quote       */ "I do what I gotta do.",
     /* Background  */ "Nishan grew up a nomad. His father kept him moving, from one score to the next, across the rapidly changing landscape of the former Soviet Union. He sat in the back of a Lada Niva playing with toys while his father brokered drug deals in Gori. As a teen, he kept a lookout for Russian authorities while his father broke into a house in Moscow. When they came, he ran.\n\n\
 For a while, he bounced around the region on his own, stealing food to get by, squatting in abandoned factories and half-finished “luxury” apartment buildings. Eventually he fell into a smuggling operation and ended up on a ship bound for Canada. From there, he snuck across the border into the United States, and eventually wound up here.\n\n\

@@ -17,6 +17,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ NULL,
     /* Order       */ NULL,
+    /* Nimbus      */ NULL,
     /* Quote       */ "Sorry, this area is for staff only.",
     /* Background  */ "Natasha was raised in Russia. She moved to USA upon receiving a scholarship to study Art History at Harvard.",
     /* Description */ "5'7\", honey-coloured hair, brown eyes.",

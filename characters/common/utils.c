@@ -88,6 +88,12 @@ void print_character() {
         print_header("Praxes");
         print_praxes();
         printf("\n");
+
+        if(overview.nimbus != NULL) {
+            print_header("Nimbus");
+            printf("%s\n", overview.nimbus);
+            printf("\n");
+        }
     }
 
     print_header("Gear");
