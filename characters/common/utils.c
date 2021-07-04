@@ -38,16 +38,17 @@ void print_category_name(enum category c) {
 }
 
 void calculate_secondary_stats() {
-    health = size + get_attribute(Stamina);
-    willpower = get_attribute(Resolve) + get_attribute(Composure);
-    speed = get_attribute(Strength) + get_attribute(Dexterity) + 5;
-    initiative = get_attribute(Dexterity) + get_attribute(Composure);
-    perception = get_attribute(Wits) + get_attribute(Composure);
-    recovery = get_attribute(Resolve) + get_attribute(Stamina);
+    // These all have "+=" to pick up changes from advancement() due to merits etc
+    health += size + get_attribute(Stamina);
+    willpower += get_attribute(Resolve) + get_attribute(Composure);
+    speed += get_attribute(Strength) + get_attribute(Dexterity) + 5;
+    initiative += get_attribute(Dexterity) + get_attribute(Composure);
+    perception += get_attribute(Wits) + get_attribute(Composure);
+    recovery += get_attribute(Resolve) + get_attribute(Stamina);
 
     struct skill_t athletics;
     get_skill(&athletics, "Athletics");
-    defense = min(get_attribute(Dexterity), get_attribute(Wits)) + athletics.dots;
+    defense += min(get_attribute(Dexterity), get_attribute(Wits)) + athletics.dots;
 }
 
 void print_header(const char *h) {
