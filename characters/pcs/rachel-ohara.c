@@ -34,8 +34,7 @@ Rachel has vowed to protect the secrets of the Silver Ladder, uphold the Order's
 };
 
 char *aspirations[] = {
-    "Bring down a powerful crime boss",
-    "Go for a week without drinking",
+    "Arrest someone",
     NULL
 };
 

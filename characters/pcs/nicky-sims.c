@@ -45,6 +45,7 @@ char *aspirations[] = {
 };
 
 char *obsessions[] = {
+    "The fabled grimoire of Prince Alexander Mirza of Georgia",
     NULL
 };
 
