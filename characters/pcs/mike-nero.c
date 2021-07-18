@@ -117,6 +117,7 @@ struct rote_t rotes[] = {
 };
 
 char *praxes[] = {
+    "Detect Substance",
     "Remote Control",
     NULL
 };
@@ -145,10 +146,14 @@ void advancement() {
 
     // Nero Awakens
     awakened = true;
-    gnosis = 1;
     wisdom = integrity;
     integrity = 0;
 
     // Acquire an extra dot in each of Death and Matter
+    arcane_xp_spent += 2;
+
+    // Gain Gnosis
+    gnosis = 2;
+    mundane_xp_spent += 3;
     arcane_xp_spent += 2;
 }
