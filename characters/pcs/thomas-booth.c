@@ -40,7 +40,7 @@ char *aspirations[] = {
 };
 
 char *obsessions[] = {
-    "Esoteric subtexts in the writings of Nathaniel Hawthorne",
+    "17th century New England witch trials",
     NULL
 };
 
