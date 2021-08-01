@@ -37,12 +37,11 @@ Michael has vowed to protect the secrets of the Mysterium, uphold the Order's te
 char *aspirations[] = {
     "Save a life",
     "Find a magic book or teacher",
-    "Discover and explain a Mystery",
     NULL
 };
 
 char *obsessions[] = {
-    "The mysterious villa which serves as lodge for the New England Wizards (NEW)",
+    "Secret History of the USA",
     NULL
 };
 
