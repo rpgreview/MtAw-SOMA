@@ -131,11 +131,11 @@ struct mundane_equipment_t misc_gear[] = {
 };
 
 struct weapon_t weapons[] = {
-    /* Weapon/Attack,   Dmg,    Short,  Medium, Long,   Clip,   Init,   Str,    Size    */
-    { ".38 Special",    1,         20,      40,   80,      6,      0,     2,       1 },
-    { "Runed Dagger",   0,          0,       0,    0,      0,     -1,     1,       1 },
-    { "Siderite Longsword", 4,      0,       0,    0,      0,     -2,     3,       3 },
-    { NULL,             0,          0,       0,    0,      0,      0,     0,       0 }
+    /* Weapon/Attack,       Dmg,    Short,  Medium, Long,   Clip,   Init,   Str,    Size */
+    { ".38 Special",        1,      20,     40,     80,     6,      0,      2,      1 },
+    { "Runed Dagger",       0,      0,      0,      0,      0,      -1,     1,      1 },
+    { "Siderite Longsword", 4,      0,      0,      0,      0,      -2,     3,      3 },
+    { NULL,                 0,      0,      0,      0,      0,      0,      0,      0 }
 };
 
 void advancement() {
