@@ -41,6 +41,7 @@ Nicky has vowed to protect the secrets of the Adamantine Arrow, uphold the Order
 char *aspirations[] = {
     "Put a bad guy in hospital",
     "Find out what's up with Anton's guns",
+    "Get to know Natasha better",
     NULL
 };
 
