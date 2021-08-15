@@ -97,7 +97,7 @@ struct merit merits[] = {
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
     { "Death",  0,      Common,     Moros,      Subtle  },
-    { "Fate",   1,      Ruling,     Acanthus,   Subtle  },
+    { "Fate",   2,      Ruling,     Acanthus,   Subtle  },
     { "Forces", 0,      Inferior,   Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
@@ -105,7 +105,7 @@ struct arcanum_t arcana[n_arcana] = {
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
-    { "Time",   2,      Ruling,     Acanthus,   Gross   }
+    { "Time",   3,      Ruling,     Acanthus,   Gross   }
 };
 
 struct rote_t rotes[] = {
@@ -115,6 +115,7 @@ struct rote_t rotes[] = {
 
 char *praxes[] = {
     "Perfect Timing",
+    "Postcognition",
     NULL
 };
 
@@ -144,4 +145,12 @@ void advancement() {
 
     // Learn Survival
     mundane_xp_spent += 2;
+
+    // Gain Gnosis
+    ++gnosis;
+    arcane_xp_spent += 5;
+
+    // Gain Ruling Arcana dots at discount rates
+    ++mundane_xp_spent;
+    ++arcane_xp_spent;
 }

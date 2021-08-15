@@ -112,6 +112,7 @@ struct rote_t rotes[] = {
 };
 
 char *praxes[] = {
+    "Control Electricity",
     "Control Fire",
     NULL
 };
@@ -154,4 +155,9 @@ void advancement() {
 
     // Perform magic in front of sleepers, an Act of Hubris
     --wisdom;
+
+    // Gain Gnosis
+    ++gnosis;
+    mundane_xp_spent += 1;
+    arcane_xp_spent += 4;
 }

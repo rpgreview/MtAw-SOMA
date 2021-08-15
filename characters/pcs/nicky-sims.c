@@ -24,7 +24,7 @@ struct character_overview overview = {
     /* Nimbus      */ "Temporal distortion; deja vu.",
     /* Quote       */ "I do what I gotta do.",
     /* Background  */ "Nishan grew up a nomad. His father kept him moving, from one score to the next, across the rapidly changing landscape of the former Soviet Union. He sat in the back of a Lada Niva playing with toys while his father brokered drug deals in Gori. As a teen, he kept a lookout for Russian authorities while his father broke into a house in Moscow. When they came, he ran.\n\n\
-For a while, he bounced around the region on his own, stealing food to get by, squatting in abandoned factories and half-finished “luxury” apartment buildings. Eventually he fell into a smuggling operation and ended up on a ship bound for Canada. From there, he snuck across the border into the United States, and eventually wound up here.\n\n\
+For a while, he bounced around the region on his own, stealing food to get by, squatting in abandoned factories and half-finished “luxury” apartment buildings. Eventually, he fell into a smuggling operation and ended up on a ship bound for Canada. From there, he snuck across the border into the United States, and eventually wound up here.\n\n\
 Nishan tried to go legit. He called in a favor with someone he’d known in Chambarak, and got himself decent papers. He got a job, working in a convenience store on the late shift. People liked “Nicky,” and Nicky liked people. Everything was going well, life was boring and predictable and oh, so peaceful.\n\n\
 Until the robbery.\n\n\
 He was there with the fucking gun in his stupid, shaking hand. He was strung out, looking for a score. Nicky knew that was the end of it. A junky like that is more dangerous than a pro—hand over the cash and the pro’ll get the hell out without risking extra charges. “Never trust a junky, Nisha,” his father used to say, so Nicky took the gun away from him. Stupid junky. Now the cops would come, and they’d look too closely at his ID and Nishan would have to move on. Nicky pulled the would-be robber over the counter. He was still beating him when Anton, the store’s owner got there and pulled him off.\n\n\
@@ -67,7 +67,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Mental,       "Medicine",         NULL,           1,      0  },
         { Mental,       "Occult",           NULL,           0,      0  },
         { Mental,       "Politics",         NULL,           0,      0  },
-        { Mental,       "Science",          NULL,           0,      0  } },
+        { Mental,       "Science",          NULL,           1,      0  } },
     // Physical
     {   { Physical,     "Athletics",        "Escape",       2,      0  },
         { Physical,     "Brawl",            NULL,           2,      0  },
@@ -76,7 +76,7 @@ struct skill_t skills[n_categories][n_mental_skills] = {
         { Physical,     "Larceny",          "Lockpicking",  3,      0  },
         { Physical,     "Stealth",          NULL,           1,      0  },
         { Physical,     "Survival",         NULL,           1,      0  },
-        { Physical,     "Weaponry",         NULL,           1,      0  } },
+        { Physical,     "Weaponry",         NULL,           2,      0  } },
     // Social
     {   { Social,       "Animal Ken",       NULL,           0,      0  },
         { Social,       "Empathy",          NULL,           0,      0  },
@@ -108,7 +108,7 @@ struct arcanum_t arcana[n_arcana] = {
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
     { "Matter", 0,      Common,     Moros,      Gross   },
-    { "Mind",   1,      Ruling,     Mastigos,   Subtle  },
+    { "Mind",   2,      Ruling,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  2,      Ruling,     Mastigos,   Gross   },
     { "Spirit", 0,      Common,     Thyrsus,    Subtle  },
@@ -154,4 +154,10 @@ void advancement() {
 
     // Acquire dot of Medicine
     mundane_xp_spent += 2;
+
+    // Acquire dots in Science and Weaponry
+    mundane_xp_spent += 4;
+
+    // Acquire a dot of Mind at discount rate
+    arcane_xp_spent += 1;
 }
