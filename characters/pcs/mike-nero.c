@@ -37,6 +37,7 @@ Michael has vowed to protect the secrets of the Mysterium, uphold the Order's te
 char *aspirations[] = {
     "Save a life",
     "Find a magic book or teacher",
+    "Build a golem",
     NULL
 };
 

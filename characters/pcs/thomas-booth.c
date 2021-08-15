@@ -36,6 +36,7 @@ Thomas has vowed to protect the secrets of the Mysterium, uphold the Order's ten
 char *aspirations[] = {
     "Acquire an impressive item to hang in apartment.",
     "Meet someone with connection to Salem witch trials, preferably someone who was actually there ;)",
+    "Acquire a demesne.",
     NULL
 };
 

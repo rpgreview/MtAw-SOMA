@@ -36,6 +36,7 @@ Rachel has vowed to protect the secrets of the Silver Ladder, uphold the Order's
 char *aspirations[] = {
     "Arrest someone",
     "Show leadership in a challenging situation",
+    "Cast a spell using Forces",
     NULL
 };
 
