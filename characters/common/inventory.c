@@ -3,8 +3,8 @@
 
 void print_mundane_equipment() {
     printf("```\n");
-    printf(     "%-18s %10s %11s %12s %10s\n", "Equipment", "Durability", "Structure", "Size", "Cost");
-    char *fmt = "%-18s %10d %11d %12d %10d\n";
+    printf(     "%-20s %10s %11s %12s %10s\n", "Equipment", "Durability", "Structure", "Size", "Cost");
+    char *fmt = "%-20s %10d %11d %12d %10d\n";
     int g = 0;
     for(; misc_gear[g].name != NULL; ++g) {
         printf(fmt, misc_gear[g].name, misc_gear[g].durability, misc_gear[g].structure, misc_gear[g].size, misc_gear[g].cost);
