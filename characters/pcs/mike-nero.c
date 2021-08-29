@@ -113,6 +113,8 @@ struct arcanum_t arcana[n_arcana] = {
 
 struct rote_t rotes[] = {
     /* Arcanum, Dots,   Spell Name,         Created By, Rote Skill  */
+    { &arcana[Death],   1,  "Speak with the Dead",  "Unknown",  &skills[Mental][Investigation]  },
+    { &arcana[Matter],  1,  "Craftsman's Eye",      "Unknown",  &skills[Mental][Investigation]  },
     { NULL,     0,      NULL,               NULL,       NULL }
 };
 
@@ -156,4 +158,8 @@ void advancement() {
     gnosis = 2;
     mundane_xp_spent += 3;
     arcane_xp_spent += 2;
+
+    // Acquire Rotes: Speak with the Dead and Craftsman's Eye
+    ++mundane_xp_spent;
+    ++arcane_xp_spent;
 }

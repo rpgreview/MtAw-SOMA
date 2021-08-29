@@ -104,6 +104,8 @@ struct arcanum_t arcana[n_arcana] = {
 
 struct rote_t rotes[] = {
     { &arcana[Fate],    1,  "Quantum Flux",             "Unknown", &skills[Mental][Occult] },
+    { &arcana[Life],    1,  "Analyse Life",             "Unknown", &skills[Physical][Survival] },
+    { &arcana[Spirit],  1,  "Exorcist's Eye",           "Unknown", &skills[Physical][Survival] },
     { &arcana[Spirit],  1,  "Gremlins",                 "Unknwon", &skills[Social][Subterfuge] },
     { &arcana[Time],    1,  "Green Light/Red Light",    "Unknown", &skills[Social][Subterfuge] },
     { NULL, 0, NULL, NULL, NULL }
@@ -128,4 +130,8 @@ void advancement() {
     gnosis = 1;
     wisdom = integrity;
     integrity = 0;
+
+    // Acquire new Rotes: Analyse Life and Exorcist's Eye
+    ++mundane_xp_spent;
+    ++arcane_xp_spent;
 }

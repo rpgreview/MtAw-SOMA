@@ -111,6 +111,8 @@ struct arcanum_t arcana[n_arcana] = {
 
 struct rote_t rotes[] = {
     /* Arcanum, Dots,   Spell Name,         Created By, Rote Skill  */
+    { &arcana[Fate],    1,  "Serendipity",                  "Unknown",  &skills[Physical][Survival]     },
+    { &arcana[Time],    1,  "Divination",                   "Unknown",  &skills[Mental][Investigation]  },
     { NULL,     0,      NULL,               NULL,       NULL }
 };
 
@@ -152,6 +154,10 @@ void advancement() {
     arcane_xp_spent += 5;
 
     // Gain Ruling Arcana dots at discount rates
+    ++mundane_xp_spent;
+    ++arcane_xp_spent;
+
+    // Acquire Rotes: Serendipity and Divination
     ++mundane_xp_spent;
     ++arcane_xp_spent;
 }

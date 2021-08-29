@@ -109,6 +109,8 @@ struct arcanum_t arcana[n_arcana] = {
 
 struct rote_t rotes[] = {
     /* Arcanum, Dots,   Spell Name,         Created By, Rote Skill  */
+    { &arcana[Forces],  1,  "Nightvision",                  "Unknown",  &skills[Mental][Investigation]  },
+    { &arcana[Prime],   1,  "Supernal Vision",              "Unknown",  &skills[Mental][Occult]         },
     { NULL,     0,      NULL,               NULL,       NULL }
 };
 
@@ -161,4 +163,8 @@ void advancement() {
     ++gnosis;
     mundane_xp_spent += 1;
     arcane_xp_spent += 4;
+
+    // Acquire Rotes: Nightvision and Supernal Vision
+    ++mundane_xp_spent;
+    ++arcane_xp_spent;
 }
