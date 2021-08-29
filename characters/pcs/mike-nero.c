@@ -85,18 +85,18 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 };
 
 struct merit merits[] = {
-    { "Status (Paramedic)",                 1 },
-    { "Tolerance for Biology",              1 },
-    { "Resources",                          5 },
-    { "Good Time Management",               1 },
-    { "Prof Training (Paramedic)",          2 },
-    { "Contacts (Doctors, Cops)",           2 }, // Due to Prof Training
-    { "Library (Occult)",                   2 },
-    { "Grimoire (Quicken Corpse, Golem)",   1 },
+    { "Status (Paramedic)",                         1 },
+    { "Tolerance for Biology",                      1 },
+    { "Resources",                                  5 },
+    { "Good Time Management",                       1 },
+    { "Prof Training (Paramedic)",                  2 },
+    { "Contacts (Doctors, Cops)",                   2 }, // Due to Prof Training
+    { "Library (Occult)",                           2 },
+    { "Grimoire (Quicken Corpse, Golem)",           1 },
     { "Grimoire (Forensic Gaze, Without A Trace)",  1 },
-    { "Order Status (Mysterium)",           2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
-    { "Safe Place (Hill Manor Penthouse)",  3 }, // Purchased with Resources.
-    { NULL,                                 0 },
+    { "Order Status (Mysterium)",                   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
+    { "Safe Place (Hill Manor Penthouse)",          3 }, // Purchased with Resources.
+    { NULL,                                         0 },
 };
 
 struct arcanum_t arcana[n_arcana] = {
