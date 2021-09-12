@@ -107,7 +107,7 @@ struct rote_t rotes[] = {
     { &arcana[Fate],    1,      "Quantum Flux",                 "Unknown",  &skills[Mental][Occult]     },
     { &arcana[Life],    1,      "Analyse Life",                 "Unknown",  &skills[Physical][Survival] },
     { &arcana[Spirit],  1,      "Exorcist's Eye",               "Unknown",  &skills[Physical][Survival] },
-    { &arcana[Spirit],  1,      "Gremlins",                     "Unknwon",  &skills[Social][Subterfuge] },
+    { &arcana[Spirit],  1,      "Gremlins",                     "Unknown",  &skills[Social][Subterfuge] },
     { &arcana[Time],    1,      "Green Light/Red Light",        "Unknown",  &skills[Social][Subterfuge] },
     { NULL,             0,      NULL,                           NULL,       NULL }
 };
