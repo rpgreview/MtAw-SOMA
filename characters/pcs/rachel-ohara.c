@@ -124,7 +124,7 @@ char *praxes[] = {
 struct mundane_equipment_t misc_gear[] = {
     // Equipment,               Durability, Structure,  Size,   Cost);
     { "Amulet of Initiative",   4,          4,          1,      5 },
-    { NULL, 0, 0, 0, 0 }
+    { NULL,                     0,          0,          0,      0 }
 };
 
 struct weapon_t weapons[] = {
