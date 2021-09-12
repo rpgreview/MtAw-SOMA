@@ -1,13 +1,22 @@
 #include <stdio.h>
+#include <string.h>
 #include <mtaw/mtaw.h>
 
 void print_mundane_equipment() {
-    printf("```\n");
-    printf(     "%-20s %10s %11s %12s %10s\n", "Equipment", "Durability", "Structure", "Size", "Cost");
-    char *fmt = "%-20s %10d %11d %12d %10d\n";
+    char *e = "Equipment";
+    int max_gear_name_len = strnlen(e, 256);
     int g = 0;
     for(; misc_gear[g].name != NULL; ++g) {
-        printf(fmt, misc_gear[g].name, misc_gear[g].durability, misc_gear[g].structure, misc_gear[g].size, misc_gear[g].cost);
+        int this_gear_name_len = strnlen(misc_gear[g].name, 256);
+        if(this_gear_name_len > max_gear_name_len) {
+            max_gear_name_len = this_gear_name_len;
+        }
+    }
+    printf("```\n");
+    printf(     "%-*s %10s %11s %12s %10s\n", max_gear_name_len, "Equipment", "Durability", "Structure", "Size", "Cost");
+    char *fmt = "%-*s %10d %11d %12d %10d\n";
+    for(g = 0; misc_gear[g].name != NULL; ++g) {
+        printf(fmt, max_gear_name_len, misc_gear[g].name, misc_gear[g].durability, misc_gear[g].structure, misc_gear[g].size, misc_gear[g].cost);
     }
     if(g == 0) {
         printf("(None)\n");
