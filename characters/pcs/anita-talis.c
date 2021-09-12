@@ -85,6 +85,7 @@ struct merit merits[] = {
     { "Occultation",                        2 },
     { "Alternate Identity",                 2 },
     { "Anonymity",                          1 },
+    { "Enhanced Item",                      3 }, // Cloak of Invisibility + Nightvision Monocle from Phylacterion
     { NULL,                                 0 }
 };
 
@@ -118,7 +119,10 @@ char *praxes[] = {
 };
 
 struct mundane_equipment_t misc_gear[] = {
+    // Equipment,               Durability, Structure,  Size,   Cost);
     { "Guitar", 2, 3, 3, 2 },
+    { "Cloak of Invisibility",  1,          3,          2,      4 },
+    { "Monocle of Nightvision", 1,          1,          1,      3 },
     { NULL,     0, 0, 0, 0 }
 };
 

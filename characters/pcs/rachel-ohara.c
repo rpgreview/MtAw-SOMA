@@ -90,6 +90,7 @@ struct merit merits[] = {
     { "Contacts (Lawyers, Gangs)",      2 }, // Due to Prof Training
     { "Serpentine",                     2 },
     { "Order Status (Silver Ladder)",   1 }, // Conditional on keeping vow
+    { "Enhanced Item",                  3 }, // Amulet of Initiative from the Phylacterion
     { NULL,                             0 }
 };
 
@@ -121,6 +122,8 @@ char *praxes[] = {
 };
 
 struct mundane_equipment_t misc_gear[] = {
+    // Equipment,               Durability, Structure,  Size,   Cost);
+    { "Amulet of Initiative",   4,          4,          1,      5 },
     { NULL, 0, 0, 0, 0 }
 };
 
@@ -167,4 +170,7 @@ void advancement() {
     // Acquire Rotes: Nightvision and Supernal Vision
     ++mundane_xp_spent;
     ++arcane_xp_spent;
+
+    // From Amulet of Initiative
+    initiative += 2;
 }

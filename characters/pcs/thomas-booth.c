@@ -92,6 +92,7 @@ struct merit merits[] = {
     { "Fame",                                       1 }, // Some combination of college sports, Salem witch ancestor, and being filmed at the Askuanebi event.
     { "Inheritance (Descended from Salem Witch)",   2 },
     { "Order Status (Mysterium)",                   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
+    { "Familiar (TBD)",                             2 }, // From the Phylacterion
     { NULL,                                         0 }
 };
 

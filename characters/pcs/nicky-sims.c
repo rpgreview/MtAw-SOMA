@@ -98,6 +98,7 @@ struct merit merits[] = {
     { "Contacts (Black Market, Security/Locksmiths)",   2 }, // Due to prof training
     { "Order Status (Adamantine Arrow)",                2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
     { "Grimoire (Mental Shield, Isolation)",            1 }, // From Books for Crooks
+    { "Daimonomikon (Brotherhood of the Demon Wind)",   3 }, // From the Phylacterion
     { NULL,                                             0 }
 };
 
