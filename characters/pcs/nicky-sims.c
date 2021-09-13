@@ -21,6 +21,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ "Mastigos",
     /* Order       */ "Adamantine Arrow",
+    /* Legacy      */ NULL,
     /* Nimbus      */ "Temporal distortion; deja vu.",
     /* Quote       */ "I do what I gotta do.",
     /* Background  */ "Nishan grew up a nomad. His father kept him moving, from one score to the next, across the rapidly changing landscape of the former Soviet Union. He sat in the back of a Lada Niva playing with toys while his father brokered drug deals in Gori. As a teen, he kept a lookout for Russian authorities while his father broke into a house in Moscow. When they came, he ran.\n\n\

@@ -21,6 +21,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ "Acanthus",
     /* Order       */ "Mysterium",
+    /* Legacy      */ NULL,
     /* Nimbus      */ "Rural dawn, cold dewy air with a hint of apple blossoms, oats and wood fires",
     /* Quote       */ "Sure, I can help you study. Come over around… seven?",
     /* Background  */ "A bright child, Thomas grew up on the university campus where his parents taught. His mother was an English professor, while his father coached the school’s baseball team. Each of his parents made (what they thought were) subtle attempts to encourage Thom’s interest in their chosen passion, but he never understood why he couldn’t love both. Throughout school, Thomas pursued three things: knowledge, athletics and girls, not necessarily in that order. By the time he actually enrolled at the university he was already well-known to the faculty. They kept an eye on him like family, which turned out to be a double-edged sword. They were glad to help, but just as glad to dish out advice and meddle in his affairs. (“Oh Thomas, I don’t mean to pry, but do you really mean to date her? She’s a C student at best. You can do better.”)\n\n\

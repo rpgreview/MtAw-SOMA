@@ -21,6 +21,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ "Obrimos",
     /* Order       */ "Silver Ladder",
+    /* Legacy      */ NULL,
     /* Nimbus      */ "Hot glowing",
     /* Quote       */ "Put on the cuffs and I won’t have to hurt you.",
     /* Background  */ "Rachel comes from a cop family. Her father, Joe, was a good Irish Catholic boy, the favorite son. At least, he was until he married a Jewish girl named Irene. His brothers mocked him for it, but his dad just said, “at least she’s not a Protestant.” Irene’s family threatened to disown her for marrying a gentile. So Rachel grew up here, away from the bulk of the family in Boston, just because her dad was tired of getting grief from both sides of the family.\n\n\

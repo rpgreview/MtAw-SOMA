@@ -11,6 +11,7 @@ struct character_overview {
     char *chronicle;
     char *path;
     char *order;
+    char *legacy;
     char *nimbus;
     char *quote;
     char *background;

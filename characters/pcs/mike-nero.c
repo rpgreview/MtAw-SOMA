@@ -21,6 +21,7 @@ struct character_overview overview = {
     /* Chronicle   */ "SOMA",
     /* Path        */ "Moros",
     /* Order       */ "Mysterium",
+    /* Legacy      */ NULL,
     /* Nimbus      */ NULL,
     /* Quote       */ "Apply pressure.",
     /* Background  */ "Michael’s a hard worker. He always has been. When he was young, Michael spent his summers helping his grandfather renovate the family’s vacation house. It was his escape from the harsh city and its dangers. He was convinced that everyone in his family was going to get mugged or hit by a drunk driver or any number of other morbid nightmares he had about the city’s horrors. But it was different here. Calm, soothing. He rehung walls with his grandfather, installed new windows and even helped out with the roofing. It was nice to do things with his hands, to see the immediate difference from his work.\n\n\

@@ -25,6 +25,12 @@ void print_overview() {
         if(overview.order != NULL) {
             printf(fmt, "Order:",   overview.order);
         }
+        if(overview.legacy != NULL) {
+            printf(fmt, "Legacy:",   overview.legacy);
+        }
+        if(overview.nimbus != NULL) {
+            printf(fmt, "Nimbus:",   overview.nimbus);
+        }
     }
     printf("\n");
 
