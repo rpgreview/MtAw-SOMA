@@ -165,4 +165,9 @@ void advancement() {
     // Acquire Rotes: Speak with the Dead and Craftsman's Eye
     ++mundane_xp_spent;
     ++arcane_xp_spent;
+
+    // Increase Gnosis
+    mundane_xp_spent += 1;
+    arcane_xp_spent += 4;
+    ++gnosis;
 }
