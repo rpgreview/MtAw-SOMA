@@ -37,7 +37,7 @@ void print_overview() {
     printf("Aspirations:\n");
     int c = 0;
     while(aspirations[c] != NULL) {
-        printf("- %s\n", aspirations[c++]);
+        printf("* %s\n", aspirations[c++]);
     }
 
     if(awakened) {
