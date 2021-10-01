@@ -56,7 +56,6 @@ struct rote_t {
     struct arcanum_t *arcanum;
     int level;
     char *spell;
-    char *creator;
     struct skill_t *rote_skill;
 };
 

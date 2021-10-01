@@ -110,10 +110,10 @@ struct arcanum_t arcana[n_arcana] = {
 };
 
 struct rote_t rotes[] = {
-    /* Arcanum,         Dots,   Spell Name,                     Created By, Rote Skill  */
-    { &arcana[Forces],  1,      "Nightvision",                  "Unknown",  &skills[Mental][Investigation]  },
-    { &arcana[Prime],   1,      "Supernal Vision",              "Unknown",  &skills[Mental][Occult]         },
-    { NULL,             0,      NULL,                           NULL,       NULL }
+    /* Arcanum,         Dots,   Spell Name,                     Rote Skill  */
+    { &arcana[Forces],  1,      "Nightvision",                  &skills[Mental][Investigation]  },
+    { &arcana[Prime],   1,      "Supernal Vision",              &skills[Mental][Occult]         },
+    { NULL,             0,      NULL,                           NULL }
 };
 
 char *praxes[] = {
