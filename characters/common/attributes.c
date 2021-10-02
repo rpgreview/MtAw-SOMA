@@ -106,12 +106,9 @@ void print_attributes() {
             printf("-");
         }
     }
-    printf("+\n");
-    printf("```\n");
-
-    printf("\n");
+    printf("+\n```\n");
+    printf("\n```\n");
     char *fmt = "%-12s %3d %s\n";
-
     if(awakened) {
         dot_str = dots(gnosis, max(10, gnosis));
         printf(fmt, "Gnosis:", gnosis, dot_str);
