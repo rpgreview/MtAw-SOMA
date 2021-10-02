@@ -71,25 +71,43 @@ int integrity_modifier() {
 }
 
 void print_attributes() {
+    int max_attr_dots[n_categories] = { 5, 5, 5 };
+    for(int cat = 0; cat < n_categories; ++cat) {
+        for(int at = 0; at < n_attribute_types; ++at) {
+            if(attributes[at][cat] > max_attr_dots[cat]) {
+                max_attr_dots[cat] = attributes[at][cat];
+            }
+        }
+    }
+    int max_attr_name_len = 12; // strlen intelligence and manipulation
     printf("```\n");
     char *dot_str;
-    for(int i = 0; i < 64; ++i) {
-        printf("%c", i % 21 ? '-' : '+');
+    for(int cat = 0; cat < n_categories; ++cat) {
+        printf("+");
+        for(int i = 0; i < max_attr_name_len + 3 + max_attr_dots[cat]; ++i) {
+            printf("-");
+        }
     }
-    printf("\n");
+    printf("+\n");
     for(int t = 0; t < n_attribute_types; ++t) {
+        printf("|");
         for(int c = 0; c < n_categories; ++c) {
             dot_str = dots(attributes[t][c], 5);
-            printf("| %-12s %s ", attribute_names[t][c], dot_str, "|");
+            int curr_disp_dots = max(attributes[t][c], 5);
+            int end_padding = max_attr_dots[c] - curr_disp_dots + 2;
+            printf(" %-12s %s%*s", attribute_names[t][c], dot_str, end_padding, "|");
             free(dot_str);
         }
-        printf("|");
         printf("\n");
     }
-    for(int i = 0; i < 64; ++i) {
-        printf("%c", i % 21 ? '-' : '+');
+    for(int cat = 0; cat < n_categories; ++cat) {
+        printf("+");
+        for(int i = 0; i < max_attr_name_len + 3 + max_attr_dots[cat]; ++i) {
+            printf("-");
+        }
     }
-    printf("\n");
+    printf("+\n");
+    printf("```\n");
 
     printf("\n");
     char *fmt = "%-12s %3d %s\n";
