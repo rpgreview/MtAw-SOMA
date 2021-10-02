@@ -183,4 +183,43 @@ void print_attributes() {
     printf(fmt, "Recovery:", recovery, dot_str);
     free(dot_str);
     printf("```\n");
+
+    printf("\n### Astral\n\n");
+    printf("```\n");
+    int astral_power = attributes[Power][Mental];
+    if(awakened && attributes[Power][Social] > astral_power) {
+        astral_power = attributes[Power][Social];
+    }
+    dot_str = dots(astral_power, 5);
+    printf(fmt, "Power:", astral_power, dot_str);
+    free(dot_str);
+    int astral_finesse = attributes[Finesse][Mental];
+    if(awakened && attributes[Finesse][Social] > astral_finesse) {
+        astral_finesse = attributes[Finesse][Social];
+    }
+    dot_str = dots(astral_finesse, 5);
+    printf(fmt, "Finesse:", astral_finesse, dot_str);
+    free(dot_str);
+    int astral_resistance = attributes[Resistance][Mental];
+    if(awakened && attributes[Resistance][Social] > astral_resistance) {
+        astral_resistance = attributes[Resistance][Social];
+    }
+    dot_str = dots(astral_resistance, 5);
+    printf(fmt, "Resistance:", astral_resistance, dot_str);
+    free(dot_str);
+    int astral_health = astral_resistance + max(5, gnosis);
+    dot_str = dots(astral_health, max(10, astral_health));
+    printf(fmt, "Health:", astral_health, dot_str);
+    free(dot_str);
+    printf("```\n");
+
+    printf("\n### Duel Arcane\n\n");
+    printf("```\n");
+    dot_str = dots(perception, max(10, perception));
+    printf(fmt, "Initiative:", perception, dot_str);
+    free(dot_str);
+    dot_str = dots(willpower, max(10, willpower));
+    printf(fmt, "Doors:", willpower, dot_str);
+    free(dot_str);
+    printf("```\n");
 }
