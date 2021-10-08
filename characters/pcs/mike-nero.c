@@ -106,7 +106,7 @@ struct arcanum_t arcana[n_arcana] = {
     { "Fate",   0,      Common,     Acanthus,   Subtle  },
     { "Forces", 0,      Common,     Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
-    { "Matter", 3,      Ruling,     Moros,      Gross   },
+    { "Matter", 4,      Ruling,     Moros,      Gross   },
     { "Mind",   0,      Common,     Mastigos,   Subtle  },
     { "Prime",  0,      Common,     Obrimos,    Subtle  },
     { "Space",  0,      Common,     Mastigos,   Gross   },
@@ -170,4 +170,7 @@ void advancement() {
     mundane_xp_spent += 1;
     arcane_xp_spent += 4;
     ++gnosis;
+
+    // Increase Matter
+    arcane_xp_spent += 1;
 }
