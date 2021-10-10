@@ -86,8 +86,9 @@ struct skill_t skills[n_categories][n_mental_skills] = {
 
 struct merit merits[] = {
     { "Prof Training (Police)",         2 },
-    { "Status (Police)",                2 },
+    { "Status (Police)",                3 },
     { "Police Tactics",                 3 },
+    { "Resources",                      1 },
     { "Contacts (Lawyers, Gangs)",      2 }, // Due to Prof Training
     { "Serpentine",                     2 },
     { "Order Status (Silver Ladder)",   1 }, // Conditional on keeping vow
