@@ -52,6 +52,11 @@ struct arcanum_t {
     enum manifestations manifestation;
 };
 
+struct praxis_t {
+    char *name;
+    bool gnosis_freebie;
+};
+
 struct rote_t {
     struct arcanum_t *arcanum;
     int level;
@@ -64,12 +69,13 @@ extern int gnosis;
 extern int wisdom;
 extern char *obsessions[];
 extern struct arcanum_t arcana[n_arcana];
+extern struct praxis_t praxes[];
 extern struct rote_t rotes[];
-extern char *praxes[];
 
 extern int arcane_xp;
 extern int arcane_xp_spent;
 
+int expected_obsessions(const int g);
 void print_arcana();
 void print_rotes();
 void print_praxes();

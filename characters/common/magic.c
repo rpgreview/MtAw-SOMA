@@ -9,6 +9,21 @@ bool awakened = false;
 int gnosis = 0;
 int wisdom = 0;
 
+int expected_obsessions(const int g) {
+    switch(gnosis) {
+        case 1: case 2:
+            return 1;
+        case 3: case 4: case 5:
+            return 2;
+        case 6: case 7: case 8:
+            return 3;
+        case 9: case 10:
+            return 4;
+        default:
+            return 0;
+    }
+}
+
 void print_arcana() {
     printf("```\n");
     char *dot_str;
@@ -90,11 +105,15 @@ void print_rotes() {
 }
 
 void print_praxes() {
-    if(praxes[0] == NULL) {
+    if(praxes[0].name == NULL) {
         printf("None\n");
         return;
     }
+    int gnosis_freebies = 0;
     printf("```\n");
-    for(int p = 0; praxes[p] != NULL; printf("%s\n", praxes[p++]));
+    for(int p = 0; praxes[p].name != NULL; gnosis_freebies += praxes[p].gnosis_freebie, printf("%s\n", praxes[p++].name));
     printf("```\n");
+    if(gnosis_freebies != gnosis) {
+        printf("**Warning:** %d Praxes acquired due to Gnosis, but Gnosis is %d\n", gnosis_freebies, gnosis);
+    }
 }

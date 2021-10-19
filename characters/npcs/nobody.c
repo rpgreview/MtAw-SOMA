@@ -97,7 +97,7 @@ struct rote_t rotes[] = {
     { NULL,     0,      NULL,               NULL }
 };
 
-char *praxes[] = {
+struct praxis_t praxes[] = {
     NULL
 };
 

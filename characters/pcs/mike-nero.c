@@ -121,11 +121,12 @@ struct rote_t rotes[] = {
     { NULL,             0,      NULL,                           NULL }
 };
 
-char *praxes[] = {
-    "Detect Substance",
-    "Remote Control",
-    "Alchemist's Touch",
-    NULL
+struct praxis_t praxes[] = {
+    /* Name                     Gnosis Freebie? */
+    { "Detect Substance",       true            },
+    { "Remote Control",         true            },
+    { "Alchemist's Touch",      true            },
+    { NULL,                     false           }
 };
 
 struct mundane_equipment_t misc_gear[] = {

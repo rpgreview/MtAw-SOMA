@@ -118,10 +118,11 @@ struct rote_t rotes[] = {
     { NULL,             0,      NULL,                           NULL }
 };
 
-char *praxes[] = {
-    "Perfect Timing",
-    "Postcognition",
-    NULL
+struct praxis_t praxes[] = {
+    /* Name                     Gnosis Freebie? */
+    { "Perfect Timing",         true            },
+    { "Postcognition",          true            },
+    { NULL,                     false           }
 };
 
 struct mundane_equipment_t misc_gear[] = {

@@ -114,9 +114,10 @@ struct rote_t rotes[] = {
     { NULL,             0,      NULL,                           NULL }
 };
 
-char *praxes[] = {
-    "Speak With Beasts",
-    NULL
+struct praxis_t praxes[] = {
+    /* Name                     Gnosis Freebie? */
+    { "Speak With Beasts",      true            },
+    { NULL,                     false           }
 };
 
 struct mundane_equipment_t misc_gear[] = {

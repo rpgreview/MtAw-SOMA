@@ -47,6 +47,10 @@ void print_overview() {
         while(obsessions[ob] != NULL) {
             printf("* %s\n", obsessions[ob++]);
         }
+        int req_obsessions = expected_obsessions(gnosis);
+        if(ob != req_obsessions) {
+            printf("**Warning:** Gnosis %d specifies %d Obsessions, but you have %d\n", gnosis, req_obsessions, ob);
+        }
     }
 
     if(overview.is_npc) {
