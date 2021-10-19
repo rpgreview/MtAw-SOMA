@@ -50,7 +50,7 @@ int attributes[n_attribute_types][n_categories] = {
                    /* MENTAL                    PHYSICAL                SOCIAL       */
 /* POWER      */ { /* Intelligence */ 2,     /* Strength  */ 2,      /* Presence     */  3 },
 /* FINESSE    */ { /* Wits         */ 3,     /* Dexterity */ 2,      /* Manipulation */  3 },
-/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 2,      /* Composure    */  2 }
+/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 2,      /* Composure    */  3 }
 };
 
 struct skill_t skills[n_categories][n_mental_skills] = {
@@ -141,9 +141,6 @@ void advancement() {
 
     // Buy a point of Serpentine
     ++mundane_xp_spent;
-
-    // After witnessing several uncanny event, Rachel is starting to feel like she's seen it all, and things don't phase her as much.
-    ++attributes[Resistance][Social];
 
     // Rachel Awakens
     awakened = true;

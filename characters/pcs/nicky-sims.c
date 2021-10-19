@@ -55,7 +55,7 @@ int attributes[n_attribute_types][n_categories] = {
                    /* MENTAL                    PHYSICAL                SOCIAL       */
 /* POWER      */ { /* Intelligence */ 2,     /* Strength  */ 3,      /* Presence     */  2 },
 /* FINESSE    */ { /* Wits         */ 3,     /* Dexterity */ 2,      /* Manipulation */  2 },
-/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 3,      /* Composure    */  2 }
+/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 4,      /* Composure    */  2 }
 };
 
 struct skill_t skills[n_categories][n_mental_skills] = {
@@ -147,9 +147,6 @@ struct weapon_t weapons[] = {
 void advancement() {
     // Buy a point of Prof Training (Criminal)
     ++mundane_xp_spent;
-
-    // After witnessing strange events, Nicky feels harder than ever.
-    ++attributes[Resistance][Physical];
 
     // Nicky Awakens
     awakened = true;

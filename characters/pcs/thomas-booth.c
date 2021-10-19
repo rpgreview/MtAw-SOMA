@@ -50,7 +50,7 @@ int attributes[n_attribute_types][n_categories] = {
                    /* MENTAL                    PHYSICAL                SOCIAL       */
 /* POWER      */ { /* Intelligence */ 3,     /* Strength  */ 2,      /* Presence     */  3 },
 /* FINESSE    */ { /* Wits         */ 3,     /* Dexterity */ 3,      /* Manipulation */  1 },
-/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 2,      /* Composure    */  2 }
+/* RESISTANCE */ { /* Resolve      */ 2,     /* Stamina   */ 2,      /* Composure    */  3 }
 };
 
 struct skill_t skills[n_categories][n_mental_skills] = {
@@ -135,9 +135,6 @@ struct weapon_t weapons[] = {
 void advancement() {
     // Purchase the Trained Observer Merit
     ++mundane_xp_spent;
-
-    // After witnessing several uncanny event, Thomas is starting to feel like he's seen it all, and things don't phase him as much.
-    ++attributes[Resistance][Social];
 
     // Thomas Awakens
     awakened = true;
