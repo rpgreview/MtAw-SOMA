@@ -49,7 +49,7 @@ void print_overview() {
         }
         int req_obsessions = expected_obsessions(gnosis);
         if(ob != req_obsessions) {
-            printf("**Warning:** Gnosis %d specifies %d Obsessions, but you have %d\n", gnosis, req_obsessions, ob);
+            printf("\n**Warning:** Gnosis %d specifies %d Obsessions, but you have %d\n", gnosis, req_obsessions, ob);
         }
     }
 
