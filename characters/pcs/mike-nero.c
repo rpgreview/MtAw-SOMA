@@ -124,6 +124,7 @@ struct rote_t rotes[] = {
 char *praxes[] = {
     "Detect Substance",
     "Remote Control",
+    "Alchemist's Touch",
     NULL
 };
 
