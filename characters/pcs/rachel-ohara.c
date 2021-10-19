@@ -132,7 +132,6 @@ struct mundane_equipment_t misc_gear[] = {
 struct weapon_t weapons[] = {
     /* Weapon/Attack,   Dmg,    Short,  Medium, Long,   Clip,   Init,   Str,    Size    */
     { "Glock 9mm",      1,         20,      40,   80,     17,      0,     2,       1 },
-    { "Runed Dagger",   0,          0,       0,    0,      0,     -1,     1,       1 },
     { NULL,             0,          0,       0,    0,      0,      0,     0,       0 }
 };
 
