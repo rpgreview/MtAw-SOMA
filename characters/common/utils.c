@@ -68,39 +68,46 @@ void print_character() {
     print_attributes();
     printf("\n");
 
-    print_header("Skills");
+    print_header("Mundane Resources");
+    printf("### Skills\n");
     print_skills();
     printf("\n");
 
-    print_header("Merits");
+    printf("### Merits\n");
     print_merits();
     printf("\n");
 
-    if(awakened) {
-        print_header("Arcana");
-        print_arcana();
-        printf("\n");
-
-        print_header("Rotes");
-        print_rotes();
-        printf("\n");
-
-        print_header("Praxes");
-        print_praxes();
-        printf("\n");
-
-        if(overview.nimbus != NULL) {
-            print_header("Nimbus");
-            printf("%s\n", overview.nimbus);
-            printf("\n");
-        }
-    }
-
-    print_header("Gear");
+    printf("### Gear\n");
     print_mundane_equipment();
     printf("\n");
     print_weapons();
     printf("\n");
+
+
+    if(awakened) {
+        print_header("Magic");
+        printf("### Gnosis Summary\n");
+        print_gnosis_summary();
+        printf("\n");
+
+        printf("### Arcana\n");
+        print_arcana();
+        printf("\n");
+
+        printf("### Rotes\n");
+        print_rotes();
+        printf("\n");
+
+        printf("### Praxes\n");
+        print_praxes();
+        printf("\n");
+
+        if(overview.nimbus != NULL) {
+            printf("### Nimbus\n");
+            printf("%s\n", overview.nimbus);
+            printf("\n");
+        }
+    }
 
     if(overview.quote != NULL
         || overview.background != NULL

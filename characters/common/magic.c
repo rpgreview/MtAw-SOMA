@@ -10,18 +10,20 @@ int gnosis = 0;
 int wisdom = 0;
 
 int expected_obsessions(const int g) {
-    switch(gnosis) {
-        case 1: case 2:
-            return 1;
-        case 3: case 4: case 5:
-            return 2;
-        case 6: case 7: case 8:
-            return 3;
-        case 9: case 10:
-            return 4;
-        default:
-            return 0;
-    }
+    return((g/3)+1);
+}
+
+void print_gnosis_summary() {
+        printf("* Ritual Interval: %s\n", ritual_interval[gnosis]);
+        printf("* Trait Max: %d\n", max(5, gnosis));
+        printf("* Yantras: %d\n", (gnosis+1)/2+1);
+        printf("* Paradox: %d\n", (gnosis+1)/2);
+        printf("* Combined Spells: %d\n", expected_obsessions(gnosis));
+        printf("* Obsessions: %d\n", expected_obsessions(gnosis));
+        printf("* Total Mana Capacity: %d\n", max_mana[gnosis]);
+        printf("* Mana Per Turn: %d\n", mana_per_turn[gnosis]);
+        printf("* Ruling Arcana Max: %d\n", min(5, (gnosis+1)/2+2));
+        printf("* Other Arcana Max: %d\n", min(5, gnosis/2+2));
 }
 
 void print_arcana() {
