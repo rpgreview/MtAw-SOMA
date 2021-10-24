@@ -113,8 +113,6 @@ extern char *obsessions[];
 extern struct arcanum_t arcana[n_arcana];
 extern struct praxis_t praxes[];
 extern struct rote_t rotes[];
-extern char *ritual_interval[];
-extern int max_mana[];
 
 extern int arcane_xp;
 extern int arcane_xp_spent;
