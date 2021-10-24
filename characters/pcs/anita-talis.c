@@ -120,6 +120,10 @@ struct praxis_t praxes[] = {
     { NULL,                     false           }
 };
 
+struct familiar_t *familiars[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     // Equipment,               Durability, Structure,  Size,   Cost);
     { "Guitar",                 2,          3,          3,      2 },

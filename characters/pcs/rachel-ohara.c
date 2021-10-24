@@ -124,6 +124,10 @@ struct praxis_t praxes[] = {
     { NULL,                     false           }
 };
 
+struct familiar_t *familiars[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     // Equipment,               Durability, Structure,  Size,   Cost);
     { "Amulet of Initiative",   4,          4,          1,      5 },

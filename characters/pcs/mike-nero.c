@@ -131,6 +131,10 @@ struct praxis_t praxes[] = {
     { NULL,                     false           }
 };
 
+struct familiar_t *familiars[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     // Equipment,           Durability, Structure,  Size,   Cost);
     { "First Aid Kit +1",   1,          3,          2,      2 },

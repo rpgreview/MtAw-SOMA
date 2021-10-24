@@ -125,6 +125,26 @@ struct praxis_t praxes[] = {
     { NULL,                     false           }
 };
 
+struct familiar_t amanda = {
+/* Name         */  "Amanda",
+/* Path         */  Moros,
+/* Power        */  1,
+/* Finesse      */  4,
+/* Resistance   */  3,
+/* Agenda       */  "Free all who are caged.",
+/* Notes        */  "Amanda is a ghost who was originally the young daughter of a witch. While on the run from witch hunters, she found her way into a magical facility called the Phylacterion. While exploring the Phylacterion, she befriended and uncaged a powerful demon called Glasya-Labolas. They wandered around the facility together for a while, trying to find a way out. Glasya-Labolas fell into a trap intended for escapees, and Amanda was stuck in the trap with him. Without access to food or water, she soon died. Centuries later, Thomas found her ghost and helped retrieve her corpse, hoping to give it a proper burial. She agreed to become his friend and familiar, and invested herself into the body of a red squirrel (base traits: 1/3/1).",
+/* Abilities    */  {
+        "Innocuous",
+        "Animal Ken 2",
+        NULL
+    }
+};
+
+struct familiar_t *familiars[] = {
+    &amanda,
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     { NULL, 0, 0, 0, 0 }
 };

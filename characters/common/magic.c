@@ -119,3 +119,28 @@ void print_praxes() {
         printf("**Warning:** %d Praxes acquired due to Gnosis, but Gnosis is %d\n", gnosis_freebies, gnosis);
     }
 }
+
+void print_familiars() {
+    int f = 0;
+    while(familiars[f] != NULL) {
+        printf("\n");
+        struct familiar_t *this = familiars[f];
+        printf("* Name: %s\n", this->name);
+        printf("* Path: %s\n", path_names[this->path]);
+        printf("* Traits: %d/%d/%d\n", this->power, this->finesse, this->resistance);
+
+        printf("* Abilities:");
+        int a = 0;
+        if(this->abilities[a] != NULL) {
+            printf(" %s", this->abilities[a]);
+        }
+        while(this->abilities[++a] != NULL) {
+            printf(", %s", this->abilities[a]);
+        }
+        printf("\n");
+
+        printf("* Agenda: %s\n", this->agenda);
+        printf("* Notes: %s\n", this->notes);
+        ++f;
+    }
+}

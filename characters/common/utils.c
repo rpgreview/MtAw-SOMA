@@ -107,6 +107,12 @@ void print_character() {
             printf("%s\n", overview.nimbus);
             printf("\n");
         }
+
+        if(familiars[0] != NULL) {
+            printf("### Familiars\n");
+            print_familiars();
+            printf("\n");
+        }
     }
 
     if(overview.quote != NULL

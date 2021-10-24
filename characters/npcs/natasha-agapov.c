@@ -109,6 +109,10 @@ struct praxis_t praxes[] = {
     NULL
 };
 
+struct familiar_t *familiars[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     { NULL, 0, 0, 0, 0 }
 };

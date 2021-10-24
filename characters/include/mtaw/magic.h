@@ -11,6 +11,14 @@ enum paths {
     n_paths
 };
 
+static char *path_names[n_paths] = {
+    "Acanthus",
+    "Mastigos",
+    "Moros",
+    "Obrimos",
+    "Thyrsus"
+};
+
 enum manifestations {
     Gross,
     Subtle,
@@ -64,6 +72,17 @@ struct rote_t {
     struct skill_t *rote_skill;
 };
 
+struct familiar_t {
+    char *name;
+    enum paths path;
+    int power;
+    int finesse;
+    int resistance;
+    char *agenda;
+    char *notes;
+    char *abilities[];
+};
+
 static char *ritual_interval[11] = {
     "N/A",
     "3 Hours",
@@ -113,6 +132,7 @@ extern char *obsessions[];
 extern struct arcanum_t arcana[n_arcana];
 extern struct praxis_t praxes[];
 extern struct rote_t rotes[];
+extern struct familiar_t *familiars[];
 
 extern int arcane_xp;
 extern int arcane_xp_spent;
@@ -122,3 +142,4 @@ void print_gnosis_summary();
 void print_arcana();
 void print_rotes();
 void print_praxes();
+void print_familiars();

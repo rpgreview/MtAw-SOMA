@@ -130,6 +130,10 @@ struct praxis_t praxes[] = {
     { NULL,                     false           }
 };
 
+struct familiar_t *familiars[] = {
+    NULL
+};
+
 struct mundane_equipment_t misc_gear[] = {
     /* Equipment                Durability  Structure   Size    Cost */
     { "1yr membership, MoRI",   1,          1,          1,      2   },
