@@ -93,13 +93,13 @@ struct merit merits[] = {
     { "Fame",                                       1 }, // Some combination of college sports, Salem witch ancestor, and being filmed at the Askuanebi event.
     { "Inheritance (Descended from Salem Witch)",   2 },
     { "Order Status (Mysterium)",                   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
-    { "Familiar (TBD)",                             2 }, // From the Phylacterion
+    { "Familiar",                                   3 }, // From the Phylacterion
     { NULL,                                         0 }
 };
 
 struct arcanum_t arcana[n_arcana] = {
     /* Name     Dots    Status      Path        Manifestation */
-    { "Death",  0,      Common,     Moros,      Subtle  },
+    { "Death",  1,      Common,     Moros,      Subtle  },
     { "Fate",   2,      Ruling,     Acanthus,   Subtle  },
     { "Forces", 0,      Inferior,   Obrimos,    Gross   },
     { "Life",   0,      Common,     Thyrsus,    Gross   },
@@ -159,5 +159,10 @@ void advancement() {
 
     // Acquire Rotes: Serendipity and Divination
     ++mundane_xp_spent;
+    ++arcane_xp_spent;
+
+    // Acquire a dot in Death.
+    // One of the first six dots, so available for 2XP.
+    // This is then reduced to 1XP thanks to Familiar tutelage.
     ++arcane_xp_spent;
 }

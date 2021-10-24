@@ -44,6 +44,7 @@ char *aspirations[] = {
 
 char *obsessions[] = {
     "Secret History of the USA",
+    "Restoring Life",
     NULL
 };
 
@@ -97,6 +98,7 @@ struct merit merits[] = {
     { "Grimoire (Forensic Gaze, Without A Trace)",  1 },
     { "Order Status (Mysterium)",                   2 }, // Conditional on keeping vow and demonstrating proficiency in Order Rote Skills.
     { "Safe Place (Hill Manor Penthouse)",          3 }, // Purchased with Resources.
+    { "High Speech",                                1 },
     { NULL,                                         0 },
 };
 
@@ -175,4 +177,7 @@ void advancement() {
 
     // Increase Matter
     arcane_xp_spent += 1;
+
+    // Acquire High Speech Merit
+    mundane_xp_spent += 1;
 }
