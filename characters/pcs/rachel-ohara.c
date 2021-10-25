@@ -76,12 +76,12 @@ struct skill_t skills[n_categories][n_mental_skills] = {
     // Social
     {   { Social,       "Animal Ken",       NULL,           0,      0  },
         { Social,       "Empathy",          NULL,           1,      0  },
-        { Social,       "Expression",       NULL,           0,      0  },
+        { Social,       "Expression",       NULL,           1,      IS_ORDER_ROTE_SKILL  },
         { Social,       "Intimidation",     NULL,           2,      0  },
-        { Social,       "Persuasion",       NULL,           0,      0  },
+        { Social,       "Persuasion",       NULL,           1,      IS_ORDER_ROTE_SKILL  },
         { Social,       "Socialize",        NULL,           0,      0  },
         { Social,       "Streetwise",       NULL,           1,      IS_ASSET  },
-        { Social,       "Subterfuge",       NULL,           1,      0  } }
+        { Social,       "Subterfuge",       NULL,           1,      IS_ORDER_ROTE_SKILL  } }
 };
 
 struct merit merits[] = {
@@ -176,4 +176,8 @@ void advancement() {
 
     // From Amulet of Initiative
     initiative += 2;
+
+    // Acquire Order Rote Skills
+    mundane_xp_spent += 4;
+    arcane_xp_spent += 3;
 }
